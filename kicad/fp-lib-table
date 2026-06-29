@@ -1,0 +1,5 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "AK449SEQfootprint") (type "KiCad") (uri "${KIPRJMOD}/parts/AK4493SEQ/footprint") (options "") (descr ""))
+	(lib (name "CS4313footprint") (type "KiCad") (uri "${KIPRJMOD}/parts/CS4313-CNZR/footprint") (options "") (descr ""))
+)

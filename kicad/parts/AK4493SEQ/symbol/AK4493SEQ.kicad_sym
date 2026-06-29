@@ -1,0 +1,360 @@
+(kicad_symbol_lib
+  (version 20211014)
+  (generator https://github.com/uPesy/easyeda2kicad.py)
+
+  (symbol "AK4493SEQ"
+    (in_bom yes)
+    (on_board yes)
+    (property
+      "Reference"
+      "U"
+      (id 0)
+      (at 0 38.10 0)
+      (effects (font (size 1.27 1.27) ) )
+    )
+    (property
+      "Value"
+      "AK4493SEQ"
+      (id 1)
+      (at 0 -38.10 0)
+      (effects (font (size 1.27 1.27) ) )
+    )
+    (property
+      "Footprint"
+      "easyeda2kicad:LQFP-48_L7.0-W7.0-P0.50-LS9.0-BL"
+      (id 2)
+      (at 0 -40.64 0)
+      (effects (font (size 1.27 1.27) ) hide)
+    )
+    (property
+      "Datasheet"
+      "https://www.lcsc.com/datasheet/C3034947.pdf"
+      (id 3)
+      (at 0 -43.18 0)
+      (effects (font (size 1.27 1.27) ) hide)
+    )
+    (property
+      "Manufacturer"
+      "AKM"
+      (id 4)
+      (at 0 -45.72 0)
+      (effects (font (size 1.27 1.27) ) hide)
+    )
+    (property
+      "MPN"
+      "AK4493SEQ"
+      (id 5)
+      (at 0 -48.26 0)
+      (effects (font (size 1.27 1.27) ) hide)
+    )
+    (property
+      "LCSC Part"
+      "C3034947"
+      (id 6)
+      (at 0 -50.80 0)
+      (effects (font (size 1.27 1.27) ) hide)
+    )
+    (symbol "AK4493SEQ_0_1"
+      (rectangle
+        (start -20.32 30.48)
+        (end 20.32 -30.48)
+        (stroke (width 0) (type default))
+        (fill (type background))
+      )
+      (circle
+        (center -19.05 29.21)
+        (radius 0.38)
+        (stroke (width 0) (type default))
+        (fill (type none))
+      )
+      (pin unspecified line
+        (at -22.86 13.97 0)
+        (length 2.54)
+        (name "DVDD" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at -22.86 11.43 0)
+        (length 2.54)
+        (name "PDN" (effects (font (size 1.27 1.27))))
+        (number "2" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at -22.86 8.89 0)
+        (length 2.54)
+        (name "BICK/DCLK/BCK" (effects (font (size 1.27 1.27))))
+        (number "3" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at -22.86 6.35 0)
+        (length 2.54)
+        (name "SDATA/DSDL/DINL" (effects (font (size 1.27 1.27))))
+        (number "4" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at -22.86 3.81 0)
+        (length 2.54)
+        (name "LRCK/DSDR/DINR" (effects (font (size 1.27 1.27))))
+        (number "5" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at -22.86 1.27 0)
+        (length 2.54)
+        (name "SSLOW/WCK" (effects (font (size 1.27 1.27))))
+        (number "6" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at -22.86 -1.27 0)
+        (length 2.54)
+        (name "SMUTE/CSN" (effects (font (size 1.27 1.27))))
+        (number "7" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at -22.86 -3.81 0)
+        (length 2.54)
+        (name "SD/CCLK/SCL" (effects (font (size 1.27 1.27))))
+        (number "8" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at -22.86 -6.35 0)
+        (length 2.54)
+        (name "SLOW/CDTI/SDA" (effects (font (size 1.27 1.27))))
+        (number "9" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at -22.86 -8.89 0)
+        (length 2.54)
+        (name "DIF0/DZFL/TESTO1" (effects (font (size 1.27 1.27))))
+        (number "10" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at -22.86 -11.43 0)
+        (length 2.54)
+        (name "DIF1/DZFR/TESTO2" (effects (font (size 1.27 1.27))))
+        (number "11" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at -22.86 -13.97 0)
+        (length 2.54)
+        (name "DIF2/CAD0/TESTO3" (effects (font (size 1.27 1.27))))
+        (number "12" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at -13.97 -33.02 90)
+        (length 2.54)
+        (name "PSN" (effects (font (size 1.27 1.27))))
+        (number "13" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at -11.43 -33.02 90)
+        (length 2.54)
+        (name "I2C/INV" (effects (font (size 1.27 1.27))))
+        (number "14" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at -8.89 -33.02 90)
+        (length 2.54)
+        (name "DEM0/TESTO4" (effects (font (size 1.27 1.27))))
+        (number "15" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at -6.35 -33.02 90)
+        (length 2.54)
+        (name "LDOE" (effects (font (size 1.27 1.27))))
+        (number "16" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at -3.81 -33.02 90)
+        (length 2.54)
+        (name "ACKS/CAD1" (effects (font (size 1.27 1.27))))
+        (number "17" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at -1.27 -33.02 90)
+        (length 2.54)
+        (name "TESTE" (effects (font (size 1.27 1.27))))
+        (number "18" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at 1.27 -33.02 90)
+        (length 2.54)
+        (name "VREFHR" (effects (font (size 1.27 1.27))))
+        (number "19" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at 3.81 -33.02 90)
+        (length 2.54)
+        (name "VREFHR" (effects (font (size 1.27 1.27))))
+        (number "20" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at 6.35 -33.02 90)
+        (length 2.54)
+        (name "VREFLR" (effects (font (size 1.27 1.27))))
+        (number "21" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at 8.89 -33.02 90)
+        (length 2.54)
+        (name "VREFLR" (effects (font (size 1.27 1.27))))
+        (number "22" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at 11.43 -33.02 90)
+        (length 2.54)
+        (name "VCMR" (effects (font (size 1.27 1.27))))
+        (number "23" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at 13.97 -33.02 90)
+        (length 2.54)
+        (name "NC" (effects (font (size 1.27 1.27))))
+        (number "24" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at 22.86 -13.97 180)
+        (length 2.54)
+        (name "AOUTRP" (effects (font (size 1.27 1.27))))
+        (number "25" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at 22.86 -11.43 180)
+        (length 2.54)
+        (name "AOUTRN" (effects (font (size 1.27 1.27))))
+        (number "26" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at 22.86 -8.89 180)
+        (length 2.54)
+        (name "VDDR" (effects (font (size 1.27 1.27))))
+        (number "27" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at 22.86 -6.35 180)
+        (length 2.54)
+        (name "VDDR" (effects (font (size 1.27 1.27))))
+        (number "28" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at 22.86 -3.81 180)
+        (length 2.54)
+        (name "VSSR" (effects (font (size 1.27 1.27))))
+        (number "29" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at 22.86 -1.27 180)
+        (length 2.54)
+        (name "VSSR" (effects (font (size 1.27 1.27))))
+        (number "30" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at 22.86 1.27 180)
+        (length 2.54)
+        (name "VSSL" (effects (font (size 1.27 1.27))))
+        (number "31" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at 22.86 3.81 180)
+        (length 2.54)
+        (name "VSSL" (effects (font (size 1.27 1.27))))
+        (number "32" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at 22.86 6.35 180)
+        (length 2.54)
+        (name "VDDL" (effects (font (size 1.27 1.27))))
+        (number "33" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at 22.86 8.89 180)
+        (length 2.54)
+        (name "VDDL" (effects (font (size 1.27 1.27))))
+        (number "34" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at 22.86 11.43 180)
+        (length 2.54)
+        (name "AOUTLN" (effects (font (size 1.27 1.27))))
+        (number "35" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at 22.86 13.97 180)
+        (length 2.54)
+        (name "AOUTLP" (effects (font (size 1.27 1.27))))
+        (number "36" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at 13.97 33.02 270)
+        (length 2.54)
+        (name "NC" (effects (font (size 1.27 1.27))))
+        (number "37" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at 11.43 33.02 270)
+        (length 2.54)
+        (name "VCML" (effects (font (size 1.27 1.27))))
+        (number "38" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at 8.89 33.02 270)
+        (length 2.54)
+        (name "VREFLL" (effects (font (size 1.27 1.27))))
+        (number "39" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at 6.35 33.02 270)
+        (length 2.54)
+        (name "VREFLL" (effects (font (size 1.27 1.27))))
+        (number "40" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at 3.81 33.02 270)
+        (length 2.54)
+        (name "VREFHL" (effects (font (size 1.27 1.27))))
+        (number "41" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at 1.27 33.02 270)
+        (length 2.54)
+        (name "VREFHL" (effects (font (size 1.27 1.27))))
+        (number "42" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at -1.27 33.02 270)
+        (length 2.54)
+        (name "NC" (effects (font (size 1.27 1.27))))
+        (number "43" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at -3.81 33.02 270)
+        (length 2.54)
+        (name "AVDD" (effects (font (size 1.27 1.27))))
+        (number "44" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at -6.35 33.02 270)
+        (length 2.54)
+        (name "AVSS" (effects (font (size 1.27 1.27))))
+        (number "45" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at -8.89 33.02 270)
+        (length 2.54)
+        (name "MCLK" (effects (font (size 1.27 1.27))))
+        (number "46" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at -11.43 33.02 270)
+        (length 2.54)
+        (name "DVSS" (effects (font (size 1.27 1.27))))
+        (number "47" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at -13.97 33.02 270)
+        (length 2.54)
+        (name "TVDD" (effects (font (size 1.27 1.27))))
+        (number "48" (effects (font (size 1.27 1.27))))
+      )
+    )
+  )
+)
