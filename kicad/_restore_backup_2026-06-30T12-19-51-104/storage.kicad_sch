@@ -624,12 +624,12 @@
 	)
 	(hierarchical_label "CARD_DETECT"
 		(shape input)
-		(at 77.47 81.28 180)
+		(at 38.1 25.4 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "35be44aa-8325-48f5-8240-dc7f8ae9f26e")
 	)
@@ -700,7 +700,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1a7972ec-4137-46fa-a4a9-ab40b18305cc")
-		(property "Reference" "J4"
+		(property "Reference" "J3"
 			(at 123.825 46.99 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -789,7 +789,7 @@
 		(instances
 			(project "MP3player"
 				(path "/c86fdb70-ebb0-4c87-946f-42a0fbefb388/719a4c5b-010e-4480-a891-7346e02ef661"
-					(reference "J4")
+					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -807,7 +807,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5952d57d-b5ba-4e02-a437-c58da1666f02")
-		(property "Reference" "#PWR043"
+		(property "Reference" "#PWR017"
 			(at 144.78 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -867,7 +867,7 @@
 		(instances
 			(project "MP3player"
 				(path "/c86fdb70-ebb0-4c87-946f-42a0fbefb388/719a4c5b-010e-4480-a891-7346e02ef661"
-					(reference "#PWR043")
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)

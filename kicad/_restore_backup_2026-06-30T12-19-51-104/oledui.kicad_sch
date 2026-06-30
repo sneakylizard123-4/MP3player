@@ -1,0 +1,162 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "6542239b-81d3-4901-acd1-facb4d06e8d4")
+	(paper "A4")
+	(lib_symbols)
+	(hierarchical_label "BTN_PREV"
+		(shape input)
+		(at 25.4 53.34 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "167fed7e-a200-4d5c-82bb-d71aa5e0988e")
+	)
+	(hierarchical_label "BTN_PLAY"
+		(shape input)
+		(at 25.4 48.26 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1c7b9065-abb5-4383-9a24-70901c1bfe54")
+	)
+	(hierarchical_label "OLED_SCK"
+		(shape input)
+		(at 25.4 25.4 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "38bba710-2eec-472b-8955-ae186215bdb3")
+	)
+	(hierarchical_label "3.3V"
+		(shape input)
+		(at 25.4 38.1 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3fb4f2c6-0037-46c8-86ec-d5f40cf58312")
+	)
+	(hierarchical_label "OLED_DC"
+		(shape input)
+		(at 25.4 33.02 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "413234a5-0fce-4154-a49b-f9a36c419541")
+	)
+	(hierarchical_label "BTN_VOL_UP"
+		(shape input)
+		(at 25.4 43.18 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "49fead65-1d3d-4e38-9c36-463ace07e553")
+	)
+	(hierarchical_label "BTN_NEXT"
+		(shape input)
+		(at 25.4 50.8 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "60c02df8-9d24-4e03-ba2e-b063accbc2db")
+	)
+	(hierarchical_label "OLED_MOSI"
+		(shape input)
+		(at 25.4 27.94 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "61b57d84-fbe2-40d6-b97c-8f582f145ea0")
+	)
+	(hierarchical_label "OLED_RST"
+		(shape input)
+		(at 25.4 35.56 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7069a639-299f-4c34-9771-834d672009c3")
+	)
+	(hierarchical_label "BTN_BACK"
+		(shape input)
+		(at 25.4 58.42 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a1aec1c5-e487-41fb-8937-eb52532ce050")
+	)
+	(hierarchical_label "OLED_CS"
+		(shape input)
+		(at 25.4 30.48 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "da9ed689-971f-409a-a0ba-58db41489ff6")
+	)
+	(hierarchical_label "BTN_POWER"
+		(shape input)
+		(at 25.4 40.64 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "eb51c586-ce44-42a8-9e9a-b23e2d35ffca")
+	)
+	(hierarchical_label "BTN_MENU"
+		(shape input)
+		(at 25.4 55.88 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ece4d452-3212-4f69-bcee-71207d18f133")
+	)
+	(hierarchical_label "BTN_VOL_DOWN"
+		(shape input)
+		(at 25.4 45.72 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f7b99904-5fa9-4722-9c96-23cb3182ff09")
+	)
+)

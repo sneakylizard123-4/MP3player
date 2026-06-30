@@ -7,7 +7,7 @@
 	(lib_symbols)
 	(sheet
 		(at 203.2 25.4)
-		(size 12.7 38.1)
+		(size 12.7 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -33,7 +33,7 @@
 			)
 		)
 		(property "Sheetfile" "microphone.kicad_sch"
-			(at 203.2 64.0846 0)
+			(at 203.2 38.6846 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -53,7 +53,7 @@
 	)
 	(sheet
 		(at 25.4 25.4)
-		(size 12.7 38.1)
+		(size 12.7 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -79,7 +79,7 @@
 			)
 		)
 		(property "Sheetfile" "power.kicad_sch"
-			(at 25.4 64.0846 0)
+			(at 25.4 38.6846 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -87,136 +87,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
-			)
-		)
-		(pin "+3.3V" input
-			(at 38.1 27.94 0)
-			(uuid "cb08388c-f45d-4174-bc58-70d4ff667b53")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "+3.3V_Audio" input
-			(at 38.1 30.48 0)
-			(uuid "614dbdd0-bac8-4142-b142-57f30ee8f355")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "+5V" input
-			(at 38.1 35.56 0)
-			(uuid "0b69be7e-272f-48d5-9748-f19ebdc58280")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "BATTRAW" input
-			(at 38.1 38.1 0)
-			(uuid "9a3dc6e8-84b4-40c2-b6ea-865874469244")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "VBAT" input
-			(at 38.1 45.72 0)
-			(uuid "b16e6695-ac4a-48b8-8462-867e246b5048")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "VBUS" input
-			(at 38.1 48.26 0)
-			(uuid "ab58817e-70df-45ff-83d4-36927b2579c9")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "BQ25895_INT" input
-			(at 38.1 50.8 0)
-			(uuid "11f037be-7b61-445a-834f-8ac88d717a40")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "MAX17263_ALRT" input
-			(at 38.1 53.34 0)
-			(uuid "946f9a27-4c3e-49ce-815e-44f3ef8b2fad")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "PWR_I2C_SCL" input
-			(at 38.1 55.88 0)
-			(uuid "6ffed3fe-3240-40cc-a117-6e6f93cc1cf3")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "PWR_I2C_SDA" input
-			(at 38.1 58.42 0)
-			(uuid "ffc299c0-c877-4621-84d8-7b0c72304c14")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "BQ25895_CE" input
-			(at 38.1 40.64 0)
-			(uuid "cc2d2437-c52d-40b2-9e45-ca8d959f6911")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "BQ25895_OTG" input
-			(at 38.1 43.18 0)
-			(uuid "e68d4867-fadc-40ec-a2c9-6f0c3acc3212")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "+3.3v_AUX" input
-			(at 38.1 33.02 0)
-			(uuid "83540bd5-2e9d-40e9-af6e-0afdeb97bc39")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 			)
 		)
 		(instances
@@ -229,7 +99,7 @@
 	)
 	(sheet
 		(at 152.4 25.4)
-		(size 12.7 38.1)
+		(size 12.7 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -255,7 +125,7 @@
 			)
 		)
 		(property "Sheetfile" "oledui.kicad_sch"
-			(at 152.4 64.0846 0)
+			(at 152.4 38.6846 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -275,7 +145,7 @@
 	)
 	(sheet
 		(at 127 25.4)
-		(size 12.7 38.1)
+		(size 12.7 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -301,7 +171,7 @@
 			)
 		)
 		(property "Sheetfile" "radio.kicad_sch"
-			(at 127 64.0846 0)
+			(at 127 38.6846 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -321,7 +191,7 @@
 	)
 	(sheet
 		(at 50.8 25.4)
-		(size 12.7 38.1)
+		(size 12.7 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -347,7 +217,7 @@
 			)
 		)
 		(property "Sheetfile" "stm32core.kicad_sch"
-			(at 50.8 64.0846 0)
+			(at 50.8 38.6846 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -367,7 +237,7 @@
 	)
 	(sheet
 		(at 177.8 25.4)
-		(size 12.7 38.1)
+		(size 12.7 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -393,7 +263,7 @@
 			)
 		)
 		(property "Sheetfile" "sparkles.kicad_sch"
-			(at 177.8 64.0846 0)
+			(at 177.8 38.6846 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -413,7 +283,7 @@
 	)
 	(sheet
 		(at 101.6 25.4)
-		(size 12.7 38.1)
+		(size 12.7 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -439,7 +309,7 @@
 			)
 		)
 		(property "Sheetfile" "storage.kicad_sch"
-			(at 101.6 64.0846 0)
+			(at 101.6 38.6846 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -459,7 +329,7 @@
 	)
 	(sheet
 		(at 76.2 25.4)
-		(size 12.7 38.1)
+		(size 12.7 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -485,7 +355,7 @@
 			)
 		)
 		(property "Sheetfile" "audio.kicad_sch"
-			(at 76.2 64.0846 0)
+			(at 76.2 38.6846 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
