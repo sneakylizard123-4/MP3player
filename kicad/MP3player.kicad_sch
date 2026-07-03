@@ -6,7 +6,7 @@
 	(paper "A4")
 	(lib_symbols)
 	(sheet
-		(at 203.2 25.4)
+		(at 228.6 25.4)
 		(size 12.7 38.1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -22,7 +22,7 @@
 		)
 		(uuid "3c7a344c-7f88-4b5c-bff2-9cbba23de578")
 		(property "Sheetname" "Microphone"
-			(at 203.2 24.6884 0)
+			(at 228.6 24.6884 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -33,7 +33,7 @@
 			)
 		)
 		(property "Sheetfile" "microphone.kicad_sch"
-			(at 203.2 64.0846 0)
+			(at 228.6 64.0846 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -52,8 +52,8 @@
 		)
 	)
 	(sheet
-		(at 25.4 25.4)
-		(size 12.7 38.1)
+		(at 20.32 25.4)
+		(size 17.78 35.56)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -68,7 +68,7 @@
 		)
 		(uuid "44773f7f-d06f-4f25-afe6-dcac6b52c94d")
 		(property "Sheetname" "Power"
-			(at 25.4 24.6884 0)
+			(at 20.32 24.6884 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -79,7 +79,7 @@
 			)
 		)
 		(property "Sheetfile" "power.kicad_sch"
-			(at 25.4 64.0846 0)
+			(at 20.32 61.5446 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -228,7 +228,7 @@
 		)
 	)
 	(sheet
-		(at 152.4 25.4)
+		(at 177.8 25.4)
 		(size 12.7 38.1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -244,7 +244,7 @@
 		)
 		(uuid "512004e9-a1da-496c-8166-a36946c707cc")
 		(property "Sheetname" "OLED UI"
-			(at 152.4 24.6884 0)
+			(at 177.8 24.6884 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -255,7 +255,7 @@
 			)
 		)
 		(property "Sheetfile" "oledui.kicad_sch"
-			(at 152.4 64.0846 0)
+			(at 177.8 64.0846 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -274,7 +274,7 @@
 		)
 	)
 	(sheet
-		(at 127 25.4)
+		(at 152.4 25.4)
 		(size 12.7 38.1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -290,7 +290,7 @@
 		)
 		(uuid "5d8de0af-6505-496a-9ec8-38890a2239a0")
 		(property "Sheetname" "Radio"
-			(at 127 24.6884 0)
+			(at 152.4 24.6884 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -301,7 +301,7 @@
 			)
 		)
 		(property "Sheetfile" "radio.kicad_sch"
-			(at 127 64.0846 0)
+			(at 152.4 64.0846 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -321,7 +321,7 @@
 	)
 	(sheet
 		(at 50.8 25.4)
-		(size 12.7 38.1)
+		(size 38.1 66.04)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -347,7 +347,7 @@
 			)
 		)
 		(property "Sheetfile" "stm32core.kicad_sch"
-			(at 50.8 64.0846 0)
+			(at 50.8 92.0246 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -355,6 +355,406 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "3.3V" input
+			(at 50.8 27.94 180)
+			(uuid "db296479-29a2-463d-b9a8-cab96589826d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "BOOT0" input
+			(at 50.8 30.48 180)
+			(uuid "4533a45c-1bd4-4a4b-bc80-b035b3b8000c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "BTN_BACK" input
+			(at 50.8 33.02 180)
+			(uuid "8be633f1-f0d2-48bb-9c14-5f79f1c7ad7e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "BTN_MENU" input
+			(at 50.8 35.56 180)
+			(uuid "718e4684-4f8c-4c02-bfa5-b0e8039691ab")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "BTN_NEXT" input
+			(at 50.8 38.1 180)
+			(uuid "d7473145-3c24-4996-89b8-ea57e9e2eeb7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "BTN_PLAY" input
+			(at 50.8 40.64 180)
+			(uuid "9d7e9ddc-919f-4391-ab4a-81c50eb04691")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "BTN_POWER" input
+			(at 50.8 43.18 180)
+			(uuid "16ba3af0-2a47-4017-9c3e-eaddd9f5a839")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "BTN_PREV" input
+			(at 50.8 45.72 180)
+			(uuid "e45720fd-6719-406d-93b8-c9363370ce57")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "BTN_VOL_DOWN" input
+			(at 50.8 48.26 180)
+			(uuid "f718f78a-74e7-40e1-880e-1cdd5b77e8bd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "BTN_VOL_UP" input
+			(at 50.8 50.8 180)
+			(uuid "bef20628-2bc5-48c4-a6d7-1bb6499f724a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "LED_MOSI" input
+			(at 50.8 53.34 180)
+			(uuid "4cbb9c36-c443-4653-9588-0e874ffe2c72")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "LED_SCK" input
+			(at 50.8 55.88 180)
+			(uuid "6f75fc61-ef13-4b0d-b6d4-18861655ec41")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "MAX17263_INT" input
+			(at 50.8 58.42 180)
+			(uuid "43434bf5-2da7-41eb-9360-80ad430947f9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "MIC_BCLK" input
+			(at 50.8 60.96 180)
+			(uuid "41b5f615-1803-4a86-b81d-e137b8df8881")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "MIC_DATA" input
+			(at 50.8 63.5 180)
+			(uuid "8b8895d0-516b-4536-af88-c385eeec3271")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "MIC_LRCLK" input
+			(at 50.8 66.04 180)
+			(uuid "55c7d132-3181-4dcf-9f9b-2a331b9dbf40")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "NRST" input
+			(at 50.8 68.58 180)
+			(uuid "bb39459f-ac0d-473b-8f95-a2f199a2d298")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "OLED_CS" input
+			(at 50.8 71.12 180)
+			(uuid "d32cdb2f-775a-4cf8-869d-bbefe47079f9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "OLED_DC" input
+			(at 50.8 73.66 180)
+			(uuid "93f690e8-b083-420a-ad8d-aab2819b069c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "OLED_MISO" input
+			(at 50.8 76.2 180)
+			(uuid "d3f78751-3dbf-46f1-aea2-cbfd891bda62")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "OLED_MOSI" input
+			(at 50.8 78.74 180)
+			(uuid "55e8f8b0-1b78-40a9-998e-f9f0bf254baa")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "OLED_RST" input
+			(at 50.8 81.28 180)
+			(uuid "be8988ca-4ea6-4486-81a7-40b7c70d3350")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "OLED_SCK" input
+			(at 50.8 83.82 180)
+			(uuid "2cfd6eff-46ca-48a4-8cfc-35132c357918")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PWR_I2C_SCL" input
+			(at 50.8 88.9 180)
+			(uuid "92fb40a6-8089-4844-b330-ec25fc04cfd6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PWR_I2C_SDA" input
+			(at 50.8 86.36 180)
+			(uuid "82083018-ba8a-4f63-9eca-0c38e269a83a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "RADIO_IRQ" input
+			(at 88.9 27.94 0)
+			(uuid "05e6fdcc-061f-43b4-86eb-9d59f939f377")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "RADIO_SCL" input
+			(at 88.9 30.48 0)
+			(uuid "7da3310f-172b-405f-bb68-b0ff2a1ceda5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "RADIO_SDA" input
+			(at 88.9 33.02 0)
+			(uuid "04bded98-9605-41d0-a841-d5d44f2d237a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SDMMC_CLK" input
+			(at 88.9 35.56 0)
+			(uuid "420ec391-f6db-4327-a0c9-48956bcb9458")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SDMMC_CMD" input
+			(at 88.9 38.1 0)
+			(uuid "ecb08924-38b1-4310-bf3c-fad4fb3544f4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SDMMC_D0" input
+			(at 88.9 40.64 0)
+			(uuid "0b5474cd-da98-4354-b89e-078082c2507a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SDMMC_D1" input
+			(at 88.9 43.18 0)
+			(uuid "f51f9f24-0cc8-48e6-9dd8-b5b8e2205148")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SDMMC_D2" input
+			(at 88.9 45.72 0)
+			(uuid "d9687fe6-1c78-4475-a277-afb829d9cd58")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SDMMC_D3" input
+			(at 88.9 48.26 0)
+			(uuid "eb69a8b9-f9c3-4f41-a7ed-6cacf138f576")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "STM32-3.3VA" input
+			(at 88.9 50.8 0)
+			(uuid "2efc63d6-7cad-4746-87d5-e887f35ad49e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SWCLK" input
+			(at 88.9 53.34 0)
+			(uuid "5474fccf-e5c5-4721-a740-f53c4f87d66b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SWDIO" input
+			(at 88.9 55.88 0)
+			(uuid "eff14e3e-bd41-4870-942b-def4dbd338ac")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "USB_DM" input
+			(at 88.9 58.42 0)
+			(uuid "b12aab71-b04d-452d-a5d5-024b059dff79")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "USB_DP" input
+			(at 88.9 60.96 0)
+			(uuid "43bdb9a5-1e63-4341-a855-5adacf88ffe6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "VREF" input
+			(at 88.9 63.5 0)
+			(uuid "ca3f9a4a-d2c1-4047-a2de-c05425e84591")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
@@ -366,7 +766,7 @@
 		)
 	)
 	(sheet
-		(at 177.8 25.4)
+		(at 203.2 25.4)
 		(size 12.7 38.1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -382,7 +782,7 @@
 		)
 		(uuid "6b15f412-bbfd-4cd1-9875-9458549e3802")
 		(property "Sheetname" "LED Spectrum"
-			(at 177.8 24.6884 0)
+			(at 203.2 24.6884 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -393,7 +793,7 @@
 			)
 		)
 		(property "Sheetfile" "sparkles.kicad_sch"
-			(at 177.8 64.0846 0)
+			(at 203.2 64.0846 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -407,6 +807,52 @@
 			(project "MP3player"
 				(path "/c86fdb70-ebb0-4c87-946f-42a0fbefb388"
 					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 127 25.4)
+		(size 12.7 38.1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "719a4c5b-010e-4480-a891-7346e02ef661")
+		(property "Sheetname" "Storage"
+			(at 127 24.6884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "storage.kicad_sch"
+			(at 127 64.0846 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "MP3player"
+				(path "/c86fdb70-ebb0-4c87-946f-42a0fbefb388"
+					(page "5")
 				)
 			)
 		)
@@ -426,8 +872,8 @@
 		(fill
 			(color 0 0 0 0)
 		)
-		(uuid "719a4c5b-010e-4480-a891-7346e02ef661")
-		(property "Sheetname" "Storage"
+		(uuid "8ec0c330-8240-4e36-aed2-8b84a8e7f410")
+		(property "Sheetname" "Audio"
 			(at 101.6 24.6884 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -438,54 +884,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "storage.kicad_sch"
-			(at 101.6 64.0846 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "MP3player"
-				(path "/c86fdb70-ebb0-4c87-946f-42a0fbefb388"
-					(page "5")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 76.2 25.4)
-		(size 12.7 38.1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0)
-		)
-		(uuid "8ec0c330-8240-4e36-aed2-8b84a8e7f410")
-		(property "Sheetname" "Audio"
-			(at 76.2 24.6884 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
 		(property "Sheetfile" "audio.kicad_sch"
-			(at 76.2 64.0846 0)
+			(at 101.6 64.0846 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects

@@ -3606,7 +3606,7 @@
 				)
 			)
 		)
-		(property "Value" "AudioJack4_Ground_SwitchTR1"
+		(property "Value" "SHOU HAN PJ-342"
 			(at 20.8915 63.5 0)
 			(show_name no)
 			(do_not_autoplace no)
