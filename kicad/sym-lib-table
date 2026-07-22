@@ -2,4 +2,5 @@
 	(version 7)
 	(lib (name "AK4493SEQ") (type "KiCad") (uri "${KIPRJMOD}/parts/AK4493SEQ/symbol/AK4493SEQ.kicad_sym") (options "") (descr ""))
 	(lib (name "CS43131-CNZR") (type "KiCad") (uri "${KIPRJMOD}/parts/CS4313-CNZR/symbol/CS43131-CNZR.kicad_sym") (options "") (descr ""))
+	(lib (name "PMM") (type "KiCad") (uri "${KIPRJMOD}/parts/PMM/PMM.kicad_sym") (options "") (descr ""))
 )
