@@ -1,0 +1,109 @@
+# MP3 Player
+
+A portable MP3 player built around the STM32H743VIT6, designed in KiCad 10 with PlatformIO firmware.
+
+## Features
+
+- CS43131 headphone DAC with integrated amp
+- Si4735 FM radio receiver
+- ICS-43434 MEMS microphone
+- Micro SD card storage (4-bit SDMMC)
+- OLED display with button UI (3x3 matrix + direct buttons)
+- 70x APA102 RGB LEDs (sparkles + spectrum bar)
+- LSM6DSL IMU, BME680 environmental sensor, ISL29035 light sensor
+- DS3231M RTC
+- USB 2.0 (USB-C)
+- STM32-based PMM (Power Management Module) with battery charging
+- Ultra-low-noise TPS7A4701 LDO for audio, TLV70233 for digital
+
+## Project Layout
+
+```
+MP3player/
+├── kicad/                      # KiCad 10 schematics
+│   ├── MP3player.kicad_sch     # Root — hierarchical sheet definitions
+│   ├── stm32core.kicad_sch     # MCU, IMU, RTC, sensors, light sensor
+│   ├── power.kicad_sch         # USB-C, PMM, battery, regulators
+│   ├── audio.kicad_sch         # CS43131 DAC, headphone amp
+│   ├── storage.kicad_sch       # Micro SD card slot
+│   ├── oledui.kicad_sch        # OLED display + buttons
+│   ├── radio.kicad_sch         # Si4735 FM radio
+│   ├── microphone.kicad_sch    # ICS-43434 I2S mic
+│   ├── sensors.kicad_sch       # Sensor sub-circuit
+│   ├── sparkles.kicad_sch      # APA102 LED strip (sparkles)
+│   ├── ledspectrum.kicad_sch   # APA102 LED strip (spectrum bar)
+│   └── vcp_filt.kicad_sch      # PMM VCP filter capacitors
+│
+├── firmware/                   # PlatformIO firmware
+│   ├── platformio.ini          # Build config (ststm32 + stm32cube)
+│   ├── include/
+│   │   ├── stm32h7xx_hal_conf.h
+│   │   ├── pins.h              # Pin assignments from schematic
+│   │   └── config.h
+│   └── src/
+│       ├── main.cpp            # Clock, peripheral init, main loop
+│       └── msp.cpp             # HAL MSP callbacks
+│
+└── README.md
+```
+
+## Schematic Sheets
+
+| Sheet | Description | Peripherals |
+|-------|-------------|-------------|
+| Root | Hierarchical sheet connections | — |
+| STM32 Core | MCU + onboard sensors | STM32H743, LSM6DSL, DS3231M, ISL29035, BME680 |
+| Power | USB-C input, PMM, regulators | PMM module, TPS7A4701, TLV70233, USBLC6 |
+| Audio | Headphone output | CS43131-CNZR |
+| Storage | SD card slot | Micro SD (DM3) |
+| OLED UI | Display + button matrix | OLED, 13 buttons |
+| Radio | FM/AM receiver | Si4735-D60-GU |
+| Microphone | I2S MEMS mic | ICS-43434 |
+| Sparkles | LED strip | APA102-2020 (35 LEDs) |
+| LED Spectrum | LED bar | APA102-2020 (35 LEDs) |
+| VCP Filter | PMM output filtering | Capacitors |
+
+## Firmware
+
+Built with [PlatformIO](https://platformio.org/) using the STM32 HAL (stm32cube framework).
+
+### Prerequisites
+
+- [PlatformIO CLI](https://docs.platformio.org/en/latest/core/installation.html) or VS Code extension
+- ST-Link / CMSIS-DAP / J-Link for flashing
+
+### Build & Flash
+
+```bash
+cd firmware
+pio run              # build
+pio run -t upload    # flash via SWD
+```
+
+## Hardware Summary
+
+| Block | Part | Interface | MCU Pins |
+|-------|------|-----------|----------|
+| MCU | STM32H743VIT6 | — | 100-pin LQFP |
+| Audio DAC | CS43131 | I2S + I2C4 | PE0-1, PE11-12, PE14 |
+| Radio | Si4735 | I2S + I2C | PB10, PB12, PB15, PD12-14 |
+| Microphone | ICS-43434 | I2S | PE2-4, PA15 |
+| IMU | LSM6DSL | SPI1 | PE5-6, PE8-9, PE13 |
+| Gas Sensor | BME680 | SPI1 | PE5-6, PE10, PE13 |
+| Light Sensor | ISL29035 | I2C1 | PD0-1 |
+| RTC | DS3231M | I2C3 | PA8-10 |
+| SD Card | Micro SD | SDMMC1 | PC7-13 |
+| OLED | SPI display | SPI4 | PA5-7, PB5-7 |
+| LEDs | APA102-2020 | SPI | PB11, PB13 |
+| Power | PMM | UART3 + I2C2 | PD7-10, PD15, PB8-9 |
+| USB | USB 2.0 | USB FS | PA11-12 |
+| Debug | SWD | SWD | PA13-14 |
+| Buttons | 3x3 matrix + 6 direct | GPIO | PA0-4, PB0-4, PC0-1 |
+
+## Status
+
+- [x] Schematic (12 sheets, nearly complete)
+- [x] Firmware skeleton (clock config, GPIO, I2C, SPI, UART init)
+- [ ] PCB layout
+- [ ] Firmware drivers (audio, SD, OLED, LEDs, sensors, radio, buttons)
+- [ ] Firmware application (playback, UI, recording)
