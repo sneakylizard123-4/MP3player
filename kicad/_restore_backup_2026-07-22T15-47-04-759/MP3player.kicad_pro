@@ -648,7 +648,7 @@
         "uuid": "c86fdb70-ebb0-4c87-946f-42a0fbefb388"
       }
     ],
-    "used_designators": "U1-11,D1-83,J1-7,JP1,TP1-8,R1-23,C1-134,A1,AE1-2,SW1-17,MK1,BT1-3,L1,FB1,Y1-4,#PWR1-67",
+    "used_designators": "BT1,#PWR2-5,A1",
     "variants": []
   },
   "sheets": [
@@ -687,10 +687,6 @@
     [
       "3c7a344c-7f88-4b5c-bff2-9cbba23de578",
       "Microphone"
-    ],
-    [
-      "fae2aa14-d6a3-4ea7-96f8-e52515107470",
-      "VCP_FILT"
     ]
   ],
   "text_variables": {},
