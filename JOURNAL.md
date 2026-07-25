@@ -13,6 +13,7 @@ started the mp3 player project. wanted a portable player that can play files off
 chose the stm32h743vit6 as the main mcu because it has enough ram for audio buffering, lots of peripherals for all the features, and runs at 480mhz so it should be fast enough for anything i throw at it.
 picked the cs43131 for the audio dac since it has a built-in headphone amp and sounds great.
 going with apa102-2020 leds because they're easy to drive and small enough for a dense array.
+![root schematic](images/schematics/01-root.png)
 
 **Total time spent: 3 hours**
 
@@ -24,6 +25,7 @@ all the decoupling caps on the power pins - there are a lot on this chip.
 boot0 and nrst pullups, swd header for programming.
 started mapping out which peripherals go on which pins based on the alternate function table.
 this chip has so many pins it took a while to figure out the best layout.
+![mcu core](images/schematics/03-stm32core.png)
 
 **Total time spent: 5 hours**
 
@@ -36,6 +38,7 @@ added the tps7a4701 ultra-low-noise ldo for the analog/audio supply and tlv70233
 placed the sensors on the mcu core sheet - lsm6dsl imu, bme680 environmental sensor, and isl29035 light sensor.
 the lsm6dsl and bme680 share an spi bus with individual chip selects.
 isl29035 is on its own i2c bus.
+![power](images/schematics/02-power.png)
 
 **Total time spent: 6 hours**
 
@@ -48,6 +51,9 @@ headphone output with dc-blocking caps.
 added the si4735 fm radio module - it outputs i2s audio data directly, so it goes on sai2.
 radio has its own i2c bus for tuning and control, plus an irq line for rds data ready.
 added two antenna connectors with a solder jumper to select between them.
+![audio](images/schematics/04-audio.png)
+![radio](images/schematics/06-radio.png)
+![vcp filter](images/schematics/10-vcp_filt.png)
 
 **Total time spent: 5 hours**
 
@@ -60,6 +66,9 @@ designed the button matrix - 3x3 matrix for the main navigation buttons plus 6 d
 added esd protection diodes on all button inputs.
 placed the ics-43434 mems microphone - it outputs i2s directly so it connects to a sai block.
 mic has a channel select pin for stereo/mono configuration.
+![storage](images/schematics/05-storage.png)
+![oled ui](images/schematics/07-oledui.png)
+![microphone](images/schematics/09-microphone.png)
 
 **Total time spent: 5 hours**
 
@@ -72,6 +81,7 @@ each led has a 100nf decoupling cap.
 powered from the 5v rail since apa102s have internal current regulation.
 the data and clock lines come from spi-like bitbanging on two gpio pins.
 this took longer than expected because of the sheer number of components to place.
+![led spectrum](images/schematics/08-ledspectrum.png)
 
 **Total time spent: 6 hours**
 
@@ -83,6 +93,7 @@ it communicates with the main mcu over uart for status and i2c for configuration
 has digital pins for force-on, shutdown, and init signals.
 moved the pmm symbol to a better position on the power sheet and started wiring up all 40 pins.
 23 pins are no-connects (reserved, gpio, nrst, adc_in, fault, enable, pgood, 3v3 output).
+![pmm wiring](images/schematics/02-power.png)
 
 **Total time spent: 4 hours**
 
@@ -96,6 +107,8 @@ the power sheet now exposes 12 pins: +3.3v_audio, +3.3v_aux, force, init, scl, s
 connected gnd pins on both sides to ground symbols.
 wired the vbat+ and 5v_out pins to the appropriate power rails.
 the schematic is almost done now - just need to do a final review and drc pass.
+![pmm done](images/schematics/02-power.png)
+![top-level](images/schematics/01-root.png)
 
 **Total time spent: 5 hours**
 
@@ -107,6 +120,7 @@ verified all hierarchical labels match between parent and child sheets.
 the sensors sheet was missing its hierarchical labels so it was essentially disconnected.
 will need to wire that up properly or merge the sensor connections into the mcu core sheet.
 schematic is in good shape now, probably 95% complete.
+![full schematic](images/schematics/01-root.png)
 
 **Total time spent: 3 hours**
 

@@ -90,7 +90,7 @@
 	(footprint "LED_SMD:LED-APA102-2020"
 		(layer "F.Cu")
 		(uuid "00ca3482-8686-472e-a544-8349493820e7")
-		(at 134 160 180)
+		(at 134 162 180)
 		(descr "http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf")
 		(tags "LED RGB SPI")
 		(property "Reference" "D58"
@@ -444,7 +444,7 @@
 	(footprint "LED_SMD:LED-APA102-2020"
 		(layer "F.Cu")
 		(uuid "013336dd-fa34-4806-a489-ba070f2c7c28")
-		(at 146 160 180)
+		(at 146 162 180)
 		(descr "http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf")
 		(tags "LED RGB SPI")
 		(property "Reference" "D82"
@@ -1468,11 +1468,11 @@
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "067945d7-afe0-4871-90ed-6f311e2b161c")
-		(at 79.855 167.92)
+		(at 142 151 180)
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "capacitor")
 		(property "Reference" "C116"
-			(at 0 -1.43 0)
+			(at 0 1 0)
 			(layer "F.SilkS")
 			(uuid "b3c929ef-1db1-47dc-963b-1f7b9120892c")
 			(effects
@@ -1540,16 +1540,6 @@
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
-			(start -0.14058 -0.51)
-			(end 0.14058 -0.51)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "4740b534-cea3-4ed9-b6dc-879bf85b2c3d")
-		)
-		(fp_line
 			(start -0.14058 0.51)
 			(end 0.14058 0.51)
 			(stroke
@@ -1558,6 +1548,16 @@
 			)
 			(layer "F.SilkS")
 			(uuid "3f5bad40-4369-4bf3-acc7-43a588f2062e")
+		)
+		(fp_line
+			(start -0.14058 -0.51)
+			(end 0.14058 -0.51)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "4740b534-cea3-4ed9-b6dc-879bf85b2c3d")
 		)
 		(fp_rect
 			(start -1.48 -0.73)
@@ -1593,7 +1593,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.775 0)
+			(at -0.775 0 180)
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -1602,7 +1602,7 @@
 			(uuid "f77ddd80-7560-4d88-b8c3-7011df5f9ac7")
 		)
 		(pad "2" smd roundrect
-			(at 0.775 0)
+			(at 0.775 0 180)
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -2770,11 +2770,11 @@
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "0e1c7efb-d0dd-47fb-b8a6-ec8d0cabc398")
-		(at 83.865 157.88)
+		(at 146 151 180)
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "capacitor")
 		(property "Reference" "C124"
-			(at 0 -1.43 0)
+			(at 0 1 0)
 			(layer "F.SilkS")
 			(uuid "2e26b9bc-e874-4f73-bd18-7bf85eca1416")
 			(effects
@@ -2842,16 +2842,6 @@
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
-			(start -0.14058 -0.51)
-			(end 0.14058 -0.51)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "840fb8d6-8c05-477f-bf1e-518685c4bc54")
-		)
-		(fp_line
 			(start -0.14058 0.51)
 			(end 0.14058 0.51)
 			(stroke
@@ -2860,6 +2850,16 @@
 			)
 			(layer "F.SilkS")
 			(uuid "8aa1a5c8-71b6-492a-b39c-9340dec8b782")
+		)
+		(fp_line
+			(start -0.14058 -0.51)
+			(end 0.14058 -0.51)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "840fb8d6-8c05-477f-bf1e-518685c4bc54")
 		)
 		(fp_rect
 			(start -1.48 -0.73)
@@ -2895,7 +2895,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.775 0)
+			(at -0.775 0 180)
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -2904,7 +2904,7 @@
 			(uuid "e52e97fc-dc20-4ccb-890f-ee8cd9fb929c")
 		)
 		(pad "2" smd roundrect
-			(at 0.775 0)
+			(at 0.775 0 180)
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -3086,7 +3086,7 @@
 	(footprint "LED_SMD:LED-APA102-2020"
 		(layer "F.Cu")
 		(uuid "10163c51-526f-44f2-ab13-f89460d92de4")
-		(at 130 156 180)
+		(at 130 158 180)
 		(descr "http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf")
 		(tags "LED RGB SPI")
 		(property "Reference" "D49"
@@ -5030,7 +5030,7 @@
 	(footprint "LED_SMD:LED-APA102-2020"
 		(layer "F.Cu")
 		(uuid "1b01c3af-1b14-4843-ba2a-b3c648aa399e")
-		(at 122 156 180)
+		(at 122 158 180)
 		(descr "http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf")
 		(tags "LED RGB SPI")
 		(property "Reference" "D33"
@@ -6054,11 +6054,11 @@
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "20217484-b7ba-4a2f-b661-52e9a49244b8")
-		(at 178.915 148.44)
+		(at 142 145 180)
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "capacitor")
 		(property "Reference" "C115"
-			(at 0 -1.43 0)
+			(at 0 1 0)
 			(layer "F.SilkS")
 			(uuid "0d695198-4cd9-457c-968a-e471e9d965cc")
 			(effects
@@ -6126,16 +6126,6 @@
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
-			(start -0.14058 -0.51)
-			(end 0.14058 -0.51)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "42e38649-ae88-42f6-aeab-7e183ee282ec")
-		)
-		(fp_line
 			(start -0.14058 0.51)
 			(end 0.14058 0.51)
 			(stroke
@@ -6144,6 +6134,16 @@
 			)
 			(layer "F.SilkS")
 			(uuid "abb58a21-5462-4262-8c70-f3492bf1d263")
+		)
+		(fp_line
+			(start -0.14058 -0.51)
+			(end 0.14058 -0.51)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "42e38649-ae88-42f6-aeab-7e183ee282ec")
 		)
 		(fp_rect
 			(start -1.48 -0.73)
@@ -6179,7 +6179,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.775 0)
+			(at -0.775 0 180)
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -6188,7 +6188,7 @@
 			(uuid "3b1a8e6e-0bd4-4502-91f4-dc84486062b3")
 		)
 		(pad "2" smd roundrect
-			(at 0.775 0)
+			(at 0.775 0 180)
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -6890,7 +6890,7 @@
 	(footprint "LED_SMD:LED-APA102-2020"
 		(layer "F.Cu")
 		(uuid "259e0234-9c67-460d-8e30-ea201ffc985d")
-		(at 142 152 180)
+		(at 142 154 180)
 		(descr "http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf")
 		(tags "LED RGB SPI")
 		(property "Reference" "D72"
@@ -7244,7 +7244,7 @@
 	(footprint "LED_SMD:LED-APA102-2020"
 		(layer "F.Cu")
 		(uuid "25f0595c-1e71-4f5d-a06e-f8f1f4692c85")
-		(at 142 160 180)
+		(at 142 162 180)
 		(descr "http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf")
 		(tags "LED RGB SPI")
 		(property "Reference" "D74"
@@ -8388,11 +8388,11 @@
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "2a87d2d4-35d4-4606-92d3-c1a79bf74344")
-		(at 75.845 177.96)
+		(at 138 151 180)
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "capacitor")
 		(property "Reference" "C108"
-			(at 0 -1.43 0)
+			(at 0 1 0)
 			(layer "F.SilkS")
 			(uuid "77da57d3-65d7-469a-a1e4-ceab836f520b")
 			(effects
@@ -8460,16 +8460,6 @@
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
-			(start -0.14058 -0.51)
-			(end 0.14058 -0.51)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "8f52a8e1-078e-41bf-b735-2610c43aa94a")
-		)
-		(fp_line
 			(start -0.14058 0.51)
 			(end 0.14058 0.51)
 			(stroke
@@ -8478,6 +8468,16 @@
 			)
 			(layer "F.SilkS")
 			(uuid "8159f04e-be9a-4bd6-a0d5-7ca5081b0ff9")
+		)
+		(fp_line
+			(start -0.14058 -0.51)
+			(end 0.14058 -0.51)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "8f52a8e1-078e-41bf-b735-2610c43aa94a")
 		)
 		(fp_rect
 			(start -1.48 -0.73)
@@ -8513,7 +8513,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.775 0)
+			(at -0.775 0 180)
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -8522,7 +8522,7 @@
 			(uuid "dadcd99b-49e4-407b-9008-c6adcf0498c9")
 		)
 		(pad "2" smd roundrect
-			(at 0.775 0)
+			(at 0.775 0 180)
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -8546,11 +8546,11 @@
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "2d816fc4-127e-45be-8a07-abb6916034c0")
-		(at 67.825 177.96)
+		(at 126 151 180)
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "capacitor")
 		(property "Reference" "C84"
-			(at 0 -1.43 0)
+			(at 0 1 0)
 			(layer "F.SilkS")
 			(uuid "23de6d94-f005-4da5-8f4c-388c95ff273e")
 			(effects
@@ -8618,16 +8618,6 @@
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
-			(start -0.14058 -0.51)
-			(end 0.14058 -0.51)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "14c39643-35e9-4806-b997-724f8c00f7b1")
-		)
-		(fp_line
 			(start -0.14058 0.51)
 			(end 0.14058 0.51)
 			(stroke
@@ -8636,6 +8626,16 @@
 			)
 			(layer "F.SilkS")
 			(uuid "07d17c35-f2a5-4f33-8e33-1f865c94eb7d")
+		)
+		(fp_line
+			(start -0.14058 -0.51)
+			(end 0.14058 -0.51)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "14c39643-35e9-4806-b997-724f8c00f7b1")
 		)
 		(fp_rect
 			(start -1.48 -0.73)
@@ -8671,7 +8671,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.775 0)
+			(at -0.775 0 180)
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -8680,7 +8680,7 @@
 			(uuid "04f15904-7dfa-4832-b0de-20d2394aee52")
 		)
 		(pad "2" smd roundrect
-			(at 0.775 0)
+			(at 0.775 0 180)
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -9178,7 +9178,7 @@
 	(footprint "LED_SMD:LED-APA102-2020"
 		(layer "F.Cu")
 		(uuid "31e37684-0755-4522-98b1-d38cc06a5e60")
-		(at 126 164 180)
+		(at 126 166 180)
 		(descr "http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf")
 		(tags "LED RGB SPI")
 		(property "Reference" "D43"
@@ -9916,11 +9916,11 @@
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "3328defb-0d6a-4c29-9c07-6abc8bd62ec2")
-		(at 75.845 157.88)
+		(at 134 151 180)
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "capacitor")
 		(property "Reference" "C100"
-			(at 0 -1.43 0)
+			(at 0 1 0)
 			(layer "F.SilkS")
 			(uuid "22aefcba-0abb-4cb2-b2c8-22a6533237e4")
 			(effects
@@ -9988,16 +9988,6 @@
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
-			(start -0.14058 -0.51)
-			(end 0.14058 -0.51)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "15312a54-a2ee-4f2f-8525-34f5ccf39562")
-		)
-		(fp_line
 			(start -0.14058 0.51)
 			(end 0.14058 0.51)
 			(stroke
@@ -10006,6 +9996,16 @@
 			)
 			(layer "F.SilkS")
 			(uuid "ea226945-138b-459c-a9e9-48e52b67a76f")
+		)
+		(fp_line
+			(start -0.14058 -0.51)
+			(end 0.14058 -0.51)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "15312a54-a2ee-4f2f-8525-34f5ccf39562")
 		)
 		(fp_rect
 			(start -1.48 -0.73)
@@ -10041,7 +10041,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.775 0)
+			(at -0.775 0 180)
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -10050,7 +10050,7 @@
 			(uuid "ac52617d-6cec-4b70-b7b4-b87d18d1d6fd")
 		)
 		(pad "2" smd roundrect
-			(at 0.775 0)
+			(at 0.775 0 180)
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -13032,7 +13032,7 @@
 	(footprint "LED_SMD:LED-APA102-2020"
 		(layer "F.Cu")
 		(uuid "3d5b3875-8153-4c2e-8189-4a633e0e3e71")
-		(at 126 160 180)
+		(at 126 162 180)
 		(descr "http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf")
 		(tags "LED RGB SPI")
 		(property "Reference" "D42"
@@ -13898,7 +13898,7 @@
 	(footprint "LED_SMD:LED-APA102-2020"
 		(layer "F.Cu")
 		(uuid "3f24a7d2-2eec-4358-a02c-e5c0f937b382")
-		(at 110 156 180)
+		(at 110 158 180)
 		(descr "http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf")
 		(tags "LED RGB SPI")
 		(property "Reference" "D9"
@@ -15197,7 +15197,7 @@
 	(footprint "LED_SMD:LED-APA102-2020"
 		(layer "F.Cu")
 		(uuid "474f4136-5252-4d5c-9347-33e396144121")
-		(at 138 164 180)
+		(at 138 166 180)
 		(descr "http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf")
 		(tags "LED RGB SPI")
 		(property "Reference" "D67"
@@ -19858,7 +19858,7 @@
 	(footprint "LED_SMD:LED-APA102-2020"
 		(layer "F.Cu")
 		(uuid "524ce0ab-0719-467c-96ca-d6ffce2e29f1")
-		(at 138 160 180)
+		(at 138 162 180)
 		(descr "http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf")
 		(tags "LED RGB SPI")
 		(property "Reference" "D66"
@@ -20566,7 +20566,7 @@
 	(footprint "LED_SMD:LED-APA102-2020"
 		(layer "F.Cu")
 		(uuid "532312da-3d87-4f41-a59a-7aaa2c07c8d5")
-		(at 122 160 180)
+		(at 122 162 180)
 		(descr "http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf")
 		(tags "LED RGB SPI")
 		(property "Reference" "D34"
@@ -21274,7 +21274,7 @@
 	(footprint "LED_SMD:LED-APA102-2020"
 		(layer "F.Cu")
 		(uuid "54cbeb05-d4e3-4691-bddf-fdb71ddc75bf")
-		(at 134 164 180)
+		(at 134 166 180)
 		(descr "http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf")
 		(tags "LED RGB SPI")
 		(property "Reference" "D59"
@@ -22176,7 +22176,7 @@
 	(footprint "LED_SMD:LED-APA102-2020"
 		(layer "F.Cu")
 		(uuid "5663ca7d-75ff-451d-8a67-4d26dce61a88")
-		(at 138 156 180)
+		(at 138 158 180)
 		(descr "http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf")
 		(tags "LED RGB SPI")
 		(property "Reference" "D65"
@@ -22884,7 +22884,7 @@
 	(footprint "LED_SMD:LED-APA102-2020"
 		(layer "F.Cu")
 		(uuid "56f5aca3-532a-44b5-8f98-1bf649efbc63")
-		(at 114 164 180)
+		(at 114 166 180)
 		(descr "http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf")
 		(tags "LED RGB SPI")
 		(property "Reference" "D19"
@@ -23238,7 +23238,7 @@
 	(footprint "LED_SMD:LED-APA102-2020"
 		(layer "F.Cu")
 		(uuid "578429e1-f07c-461f-8bbd-44704221d66d")
-		(at 138 152 180)
+		(at 138 154 180)
 		(descr "http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf")
 		(tags "LED RGB SPI")
 		(property "Reference" "D64"
@@ -23750,7 +23750,7 @@
 	(footprint "LED_SMD:LED-APA102-2020"
 		(layer "F.Cu")
 		(uuid "59f92e5d-2c06-4edf-93da-15a327da2c37")
-		(at 118 164 180)
+		(at 118 166 180)
 		(descr "http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf")
 		(tags "LED RGB SPI")
 		(property "Reference" "D27"
@@ -25576,7 +25576,7 @@
 	(footprint "LED_SMD:LED-APA102-2020"
 		(layer "F.Cu")
 		(uuid "5dd0d46e-f8a4-425f-af33-605e1d45d2d5")
-		(at 118 160 180)
+		(at 118 162 180)
 		(descr "http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf")
 		(tags "LED RGB SPI")
 		(property "Reference" "D26"
@@ -26404,7 +26404,7 @@
 	(footprint "LED_SMD:LED-APA102-2020"
 		(layer "F.Cu")
 		(uuid "6082ca4c-2b22-40e5-9607-f41842f71dcc")
-		(at 114 152 180)
+		(at 114 154 180)
 		(descr "http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf")
 		(tags "LED RGB SPI")
 		(property "Reference" "D16"
@@ -27428,11 +27428,11 @@
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "66cf873b-e75f-4708-9335-3bf1737a023e")
-		(at 63.815 167.92)
+		(at 118 151 180)
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "capacitor")
 		(property "Reference" "C68"
-			(at 0 -1.43 0)
+			(at 0 1 0)
 			(layer "F.SilkS")
 			(uuid "56098d1c-b8e7-47f4-bf01-3352befada57")
 			(effects
@@ -27500,16 +27500,6 @@
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
-			(start -0.14058 -0.51)
-			(end 0.14058 -0.51)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "5df4970c-b1e7-4ea5-b1d4-f41a4078ef19")
-		)
-		(fp_line
 			(start -0.14058 0.51)
 			(end 0.14058 0.51)
 			(stroke
@@ -27518,6 +27508,16 @@
 			)
 			(layer "F.SilkS")
 			(uuid "1cf1f0ea-33d1-4fbd-ae4b-2c6bf5d71e3a")
+		)
+		(fp_line
+			(start -0.14058 -0.51)
+			(end 0.14058 -0.51)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "5df4970c-b1e7-4ea5-b1d4-f41a4078ef19")
 		)
 		(fp_rect
 			(start -1.48 -0.73)
@@ -27553,7 +27553,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.775 0)
+			(at -0.775 0 180)
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -27562,7 +27562,7 @@
 			(uuid "c7d87aa7-36f2-4a7d-a2b4-a3dbc4822d39")
 		)
 		(pad "2" smd roundrect
-			(at 0.775 0)
+			(at 0.775 0 180)
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -27744,7 +27744,7 @@
 	(footprint "LED_SMD:LED-APA102-2020"
 		(layer "F.Cu")
 		(uuid "677fbf49-116c-4c5d-9eed-0324c719780b")
-		(at 126 152 180)
+		(at 126 154 180)
 		(descr "http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf")
 		(tags "LED RGB SPI")
 		(property "Reference" "D40"
@@ -28572,11 +28572,11 @@
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "6cc5776f-ca0c-4b94-bcfa-2286f96b54d1")
-		(at 71.835 167.92)
+		(at 130 151 180)
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "capacitor")
 		(property "Reference" "C92"
-			(at 0 -1.43 0)
+			(at 0 1 0)
 			(layer "F.SilkS")
 			(uuid "ae1e6c62-ed4e-4909-b318-6b2ae05fbf3b")
 			(effects
@@ -28644,16 +28644,6 @@
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
-			(start -0.14058 -0.51)
-			(end 0.14058 -0.51)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "841c6aa6-641e-43d8-a4ef-0ce216549a60")
-		)
-		(fp_line
 			(start -0.14058 0.51)
 			(end 0.14058 0.51)
 			(stroke
@@ -28662,6 +28652,16 @@
 			)
 			(layer "F.SilkS")
 			(uuid "002a30b5-6043-4158-828b-df115883670a")
+		)
+		(fp_line
+			(start -0.14058 -0.51)
+			(end 0.14058 -0.51)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "841c6aa6-641e-43d8-a4ef-0ce216549a60")
 		)
 		(fp_rect
 			(start -1.48 -0.73)
@@ -28697,7 +28697,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.775 0)
+			(at -0.775 0 180)
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -28706,7 +28706,7 @@
 			(uuid "49a2ec4c-8523-4900-ad73-c4b7cc4fd314")
 		)
 		(pad "2" smd roundrect
-			(at 0.775 0)
+			(at 0.775 0 180)
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -37192,7 +37192,7 @@
 	(footprint "LED_SMD:LED-APA102-2020"
 		(layer "F.Cu")
 		(uuid "8c44beb2-f98c-4cd9-8994-c8fe8db1fd7a")
-		(at 142 156 180)
+		(at 142 158 180)
 		(descr "http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf")
 		(tags "LED RGB SPI")
 		(property "Reference" "D73"
@@ -38020,7 +38020,7 @@
 	(footprint "LED_SMD:LED-APA102-2020"
 		(layer "F.Cu")
 		(uuid "933598e0-124a-45d9-b52a-0c343f18aad7")
-		(at 118 156 180)
+		(at 118 158 180)
 		(descr "http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf")
 		(tags "LED RGB SPI")
 		(property "Reference" "D25"
@@ -38532,7 +38532,7 @@
 	(footprint "LED_SMD:LED-APA102-2020"
 		(layer "F.Cu")
 		(uuid "94a93956-45a9-48cb-ad6c-341c72174cee")
-		(at 110 152 180)
+		(at 110 154 180)
 		(descr "http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf")
 		(tags "LED RGB SPI")
 		(property "Reference" "D8"
@@ -40068,7 +40068,7 @@
 	(footprint "LED_SMD:LED-APA102-2020"
 		(layer "F.Cu")
 		(uuid "9852d821-daab-4194-aac9-0413e857975a")
-		(at 146 164 180)
+		(at 146 166 180)
 		(descr "http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf")
 		(tags "LED RGB SPI")
 		(property "Reference" "D83"
@@ -41092,7 +41092,7 @@
 	(footprint "LED_SMD:LED-APA102-2020"
 		(layer "F.Cu")
 		(uuid "9ff76820-5a11-44a2-86e5-a0b3707db7b3")
-		(at 114 160 180)
+		(at 114 162 180)
 		(descr "http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf")
 		(tags "LED RGB SPI")
 		(property "Reference" "D18"
@@ -41604,7 +41604,7 @@
 	(footprint "LED_SMD:LED-APA102-2020"
 		(layer "F.Cu")
 		(uuid "a3b7ece5-ab73-440f-8211-bc2b082d8f5f")
-		(at 142 164 180)
+		(at 142 166 180)
 		(descr "http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf")
 		(tags "LED RGB SPI")
 		(property "Reference" "D75"
@@ -44487,11 +44487,11 @@
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "abc44550-ebc5-4003-884e-be2a3f0ce415")
-		(at 174.905 158.48)
+		(at 138 145 180)
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "capacitor")
 		(property "Reference" "C107"
-			(at 0 -1.43 0)
+			(at 0 1 0)
 			(layer "F.SilkS")
 			(uuid "0f68fd1a-79f2-4450-9b7e-b569e20d4206")
 			(effects
@@ -44559,16 +44559,6 @@
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
-			(start -0.14058 -0.51)
-			(end 0.14058 -0.51)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "c7466eed-e464-4fcd-8691-12aec47dcd67")
-		)
-		(fp_line
 			(start -0.14058 0.51)
 			(end 0.14058 0.51)
 			(stroke
@@ -44577,6 +44567,16 @@
 			)
 			(layer "F.SilkS")
 			(uuid "43d734a4-0aa3-4baa-87ef-69269bcfb152")
+		)
+		(fp_line
+			(start -0.14058 -0.51)
+			(end 0.14058 -0.51)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "c7466eed-e464-4fcd-8691-12aec47dcd67")
 		)
 		(fp_rect
 			(start -1.48 -0.73)
@@ -44612,7 +44612,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.775 0)
+			(at -0.775 0 180)
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -44621,7 +44621,7 @@
 			(uuid "ed72c81c-5467-40c8-8965-9f819d475319")
 		)
 		(pad "2" smd roundrect
-			(at 0.775 0)
+			(at 0.775 0 180)
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -44999,11 +44999,11 @@
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "ac98cc03-fc9b-4866-881c-a069e4222713")
-		(at 59.805 157.88)
+		(at 110 151 180)
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "capacitor")
 		(property "Reference" "C52"
-			(at 0 -1.43 0)
+			(at 0 1 0)
 			(layer "F.SilkS")
 			(uuid "fc1ef86d-3926-4ffd-8a80-d42ed244ca65")
 			(effects
@@ -45071,16 +45071,6 @@
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
-			(start -0.14058 -0.51)
-			(end 0.14058 -0.51)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "6877b32f-d4bb-44f1-878e-eca2720c1e6d")
-		)
-		(fp_line
 			(start -0.14058 0.51)
 			(end 0.14058 0.51)
 			(stroke
@@ -45089,6 +45079,16 @@
 			)
 			(layer "F.SilkS")
 			(uuid "2a7e88c2-43eb-45f8-b746-c14421f8db3e")
+		)
+		(fp_line
+			(start -0.14058 -0.51)
+			(end 0.14058 -0.51)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "6877b32f-d4bb-44f1-878e-eca2720c1e6d")
 		)
 		(fp_rect
 			(start -1.48 -0.73)
@@ -45124,7 +45124,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.775 0)
+			(at -0.775 0 180)
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -45133,7 +45133,7 @@
 			(uuid "bc627cf3-e371-41dd-9183-397938d93579")
 		)
 		(pad "2" smd roundrect
-			(at 0.775 0)
+			(at 0.775 0 180)
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -48088,11 +48088,11 @@
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "b6f34488-9fc6-4a81-915d-d5d0e5410365")
-		(at 182.925 138.4)
+		(at 146 145 180)
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "capacitor")
 		(property "Reference" "C123"
-			(at 0 -1.43 0)
+			(at 0 1 0)
 			(layer "F.SilkS")
 			(uuid "b326a46b-f595-43f6-9d53-3e7d719d241b")
 			(effects
@@ -48160,16 +48160,6 @@
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
-			(start -0.14058 -0.51)
-			(end 0.14058 -0.51)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "085513cb-b1e7-43fb-8825-0d9d3c5848fd")
-		)
-		(fp_line
 			(start -0.14058 0.51)
 			(end 0.14058 0.51)
 			(stroke
@@ -48178,6 +48168,16 @@
 			)
 			(layer "F.SilkS")
 			(uuid "5f571d7a-cb07-491b-b04f-75500ba6edbb")
+		)
+		(fp_line
+			(start -0.14058 -0.51)
+			(end 0.14058 -0.51)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "085513cb-b1e7-43fb-8825-0d9d3c5848fd")
 		)
 		(fp_rect
 			(start -1.48 -0.73)
@@ -48213,7 +48213,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.775 0)
+			(at -0.775 0 180)
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -48222,7 +48222,7 @@
 			(uuid "f024ffe6-7323-488b-b02e-19a6da9552de")
 		)
 		(pad "2" smd roundrect
-			(at 0.775 0)
+			(at 0.775 0 180)
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -48954,11 +48954,11 @@
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "b79c10be-e1f2-49b9-9a5c-ede948cf1391")
-		(at 174.905 138.4)
+		(at 134 145 180)
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "capacitor")
 		(property "Reference" "C99"
-			(at 0 -1.43 0)
+			(at 0 1 0)
 			(layer "F.SilkS")
 			(uuid "e93c4460-b2c5-47b4-a8f4-b647187fc89e")
 			(effects
@@ -49026,16 +49026,6 @@
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
-			(start -0.14058 -0.51)
-			(end 0.14058 -0.51)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "18d41360-effb-40dd-b77a-ce5d94ef9e24")
-		)
-		(fp_line
 			(start -0.14058 0.51)
 			(end 0.14058 0.51)
 			(stroke
@@ -49044,6 +49034,16 @@
 			)
 			(layer "F.SilkS")
 			(uuid "c8ab367f-c083-4016-a418-c100ea247eaf")
+		)
+		(fp_line
+			(start -0.14058 -0.51)
+			(end 0.14058 -0.51)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "18d41360-effb-40dd-b77a-ce5d94ef9e24")
 		)
 		(fp_rect
 			(start -1.48 -0.73)
@@ -49079,7 +49079,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.775 0)
+			(at -0.775 0 180)
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -49088,7 +49088,7 @@
 			(uuid "79891b87-483a-459f-8d4d-fe83fa6b3487")
 		)
 		(pad "2" smd roundrect
-			(at 0.775 0)
+			(at 0.775 0 180)
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -49112,11 +49112,11 @@
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "b7bb7937-38a0-43a7-b4d8-71879b21d895")
-		(at 67.825 157.88)
+		(at 122 151 180)
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "capacitor")
 		(property "Reference" "C76"
-			(at 0 -1.43 0)
+			(at 0 1 0)
 			(layer "F.SilkS")
 			(uuid "1bcff62b-4a07-4f15-ba2e-5601cc15edde")
 			(effects
@@ -49184,16 +49184,6 @@
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
-			(start -0.14058 -0.51)
-			(end 0.14058 -0.51)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "fac84d4c-8039-492c-bd38-34298f89d8de")
-		)
-		(fp_line
 			(start -0.14058 0.51)
 			(end 0.14058 0.51)
 			(stroke
@@ -49202,6 +49192,16 @@
 			)
 			(layer "F.SilkS")
 			(uuid "255ff84b-f70f-4db2-9fec-7164b4d8e256")
+		)
+		(fp_line
+			(start -0.14058 -0.51)
+			(end 0.14058 -0.51)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "fac84d4c-8039-492c-bd38-34298f89d8de")
 		)
 		(fp_rect
 			(start -1.48 -0.73)
@@ -49237,7 +49237,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.775 0)
+			(at -0.775 0 180)
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -49246,7 +49246,7 @@
 			(uuid "efbd4edd-8dae-4117-a294-fb06e5a23189")
 		)
 		(pad "2" smd roundrect
-			(at 0.775 0)
+			(at 0.775 0 180)
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -49727,7 +49727,7 @@
 	(footprint "LED_SMD:LED-APA102-2020"
 		(layer "F.Cu")
 		(uuid "b9139d2c-fedf-4f40-8f0a-5d4c86e0213a")
-		(at 122 164 180)
+		(at 122 166 180)
 		(descr "http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf")
 		(tags "LED RGB SPI")
 		(property "Reference" "D35"
@@ -50081,11 +50081,11 @@
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "b92a0f3e-703f-4e6a-b930-176fd76b0900")
-		(at 59.805 177.96)
+		(at 114 151 180)
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "capacitor")
 		(property "Reference" "C60"
-			(at 0 -1.43 0)
+			(at 0 1 0)
 			(layer "F.SilkS")
 			(uuid "46b74890-a914-49db-b6ab-3a3d053cfcfc")
 			(effects
@@ -50153,16 +50153,6 @@
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
-			(start -0.14058 -0.51)
-			(end 0.14058 -0.51)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "48135736-1f60-407f-b03f-a9190d52fb29")
-		)
-		(fp_line
 			(start -0.14058 0.51)
 			(end 0.14058 0.51)
 			(stroke
@@ -50171,6 +50161,16 @@
 			)
 			(layer "F.SilkS")
 			(uuid "9cffa644-0d4d-4f7d-986a-5db99bca445d")
+		)
+		(fp_line
+			(start -0.14058 -0.51)
+			(end 0.14058 -0.51)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "48135736-1f60-407f-b03f-a9190d52fb29")
 		)
 		(fp_rect
 			(start -1.48 -0.73)
@@ -50206,7 +50206,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.775 0)
+			(at -0.775 0 180)
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -50215,7 +50215,7 @@
 			(uuid "bd0eb953-44cf-4887-b92c-200e7c8ec476")
 		)
 		(pad "2" smd roundrect
-			(at 0.775 0)
+			(at 0.775 0 180)
 			(size 0.9 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -50911,7 +50911,7 @@
 	(footprint "LED_SMD:LED-APA102-2020"
 		(layer "F.Cu")
 		(uuid "bc736d44-a2b2-4691-92da-6c1de8f61508")
-		(at 130 160 180)
+		(at 130 162 180)
 		(descr "http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf")
 		(tags "LED RGB SPI")
 		(property "Reference" "D50"
@@ -51423,7 +51423,7 @@
 	(footprint "LED_SMD:LED-APA102-2020"
 		(layer "F.Cu")
 		(uuid "bd469cec-a445-4dbf-a1eb-d6e1eda47f4c")
-		(at 114 156 180)
+		(at 114 158 180)
 		(descr "http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf")
 		(tags "LED RGB SPI")
 		(property "Reference" "D17"
@@ -52904,7 +52904,7 @@
 	(footprint "LED_SMD:LED-APA102-2020"
 		(layer "F.Cu")
 		(uuid "c69f4765-c4f9-4acd-8e4a-b88d333295aa")
-		(at 146 156 180)
+		(at 146 158 180)
 		(descr "http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf")
 		(tags "LED RGB SPI")
 		(property "Reference" "D81"
@@ -53258,7 +53258,7 @@
 	(footprint "LED_SMD:LED-APA102-2020"
 		(layer "F.Cu")
 		(uuid "c73ad22e-de67-4711-9b08-78634552f059")
-		(at 130 152 180)
+		(at 130 154 180)
 		(descr "http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf")
 		(tags "LED RGB SPI")
 		(property "Reference" "D48"
@@ -54943,7 +54943,7 @@
 	(footprint "LED_SMD:LED-APA102-2020"
 		(layer "F.Cu")
 		(uuid "cfd67755-8d1a-412d-a3bc-470fe4336752")
-		(at 134 152 180)
+		(at 134 154 180)
 		(descr "http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf")
 		(tags "LED RGB SPI")
 		(property "Reference" "D56"
@@ -55455,7 +55455,7 @@
 	(footprint "LED_SMD:LED-APA102-2020"
 		(layer "F.Cu")
 		(uuid "d20602f7-5bf1-4301-a5be-f33c100798d4")
-		(at 126 156 180)
+		(at 126 158 180)
 		(descr "http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf")
 		(tags "LED RGB SPI")
 		(property "Reference" "D41"
@@ -58377,7 +58377,7 @@
 	(footprint "LED_SMD:LED-APA102-2020"
 		(layer "F.Cu")
 		(uuid "dece0e5f-eb9c-433b-b7b4-3150364623e7")
-		(at 118 152 180)
+		(at 118 154 180)
 		(descr "http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf")
 		(tags "LED RGB SPI")
 		(property "Reference" "D24"
@@ -59753,7 +59753,7 @@
 	(footprint "LED_SMD:LED-APA102-2020"
 		(layer "F.Cu")
 		(uuid "e668d51d-ebee-41ea-9b04-07a95c5f9aa7")
-		(at 110 160 180)
+		(at 110 162 180)
 		(descr "http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf")
 		(tags "LED RGB SPI")
 		(property "Reference" "D10"
@@ -61135,7 +61135,7 @@
 	(footprint "LED_SMD:LED-APA102-2020"
 		(layer "F.Cu")
 		(uuid "e9f03ca2-80e2-4f0d-98b5-bf6e8c42091f")
-		(at 134 156 180)
+		(at 134 158 180)
 		(descr "http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf")
 		(tags "LED RGB SPI")
 		(property "Reference" "D57"
@@ -62111,7 +62111,7 @@
 	(footprint "LED_SMD:LED-APA102-2020"
 		(layer "F.Cu")
 		(uuid "eea7f30f-c5b9-4529-86d2-3eef49c889d9")
-		(at 130 164 180)
+		(at 130 166 180)
 		(descr "http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf")
 		(tags "LED RGB SPI")
 		(property "Reference" "D51"
@@ -63339,7 +63339,7 @@
 	(footprint "LED_SMD:LED-APA102-2020"
 		(layer "F.Cu")
 		(uuid "f73aabe0-3d9a-4863-9d16-86871aeedd13")
-		(at 110 164 180)
+		(at 110 166 180)
 		(descr "http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf")
 		(tags "LED RGB SPI")
 		(property "Reference" "D11"
@@ -63989,7 +63989,7 @@
 	(footprint "LED_SMD:LED-APA102-2020"
 		(layer "F.Cu")
 		(uuid "f8f29947-524f-4d7e-908c-5c8cb3811ccf")
-		(at 146 152 180)
+		(at 146 154 180)
 		(descr "http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf")
 		(tags "LED RGB SPI")
 		(property "Reference" "D80"
@@ -64618,7 +64618,7 @@
 	(footprint "LED_SMD:LED-APA102-2020"
 		(layer "F.Cu")
 		(uuid "fe5fc66e-4084-452f-8447-23a94d059faf")
-		(at 122 152 180)
+		(at 122 154 180)
 		(descr "http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf")
 		(tags "LED RGB SPI")
 		(property "Reference" "D32"
