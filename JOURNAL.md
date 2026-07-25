@@ -1,0 +1,127 @@
+---
+title: "MP3 Player"
+author: sneak
+description: "Portable MP3 player based on STM32H743 with CS43131 DAC, FM radio, OLED UI, and APA102 LEDs"
+created_at: "2026-07-25T00:00:00Z"
+---
+
+
+
+# June 21: project start
+
+started the mp3 player project. wanted a portable player that can play files off an sd card, has fm radio, and looks cool with leds.
+chose the stm32h743vit6 as the main mcu because it has enough ram for audio buffering, lots of peripherals for all the features, and runs at 480mhz so it should be fast enough for anything i throw at it.
+picked the cs43131 for the audio dac since it has a built-in headphone amp and sounds great.
+going with apa102-2020 leds because they're easy to drive and small enough for a dense array.
+
+**Total time spent: 3 hours**
+
+# June 22: schematic - mcu core
+
+drew out the stm32h743 and core circuitry.
+8mhz hse crystal and 32.768khz lse crystal for the rtc.
+all the decoupling caps on the power pins - there are a lot on this chip.
+boot0 and nrst pullups, swd header for programming.
+started mapping out which peripherals go on which pins based on the alternate function table.
+this chip has so many pins it took a while to figure out the best layout.
+
+**Total time spent: 5 hours**
+
+# June 23: schematic - power and sensors
+
+added the power section. usb-c connector with cc resistors for ufp detection.
+esd protection with usblc6 on the data lines.
+was going to use a discrete power stage but decided to go with a pmm module instead - it handles charging, buck-boost, and regulation all in one.
+added the tps7a4701 ultra-low-noise ldo for the analog/audio supply and tlv70233 for the digital 3.3v rail.
+placed the sensors on the mcu core sheet - lsm6dsl imu, bme680 environmental sensor, and isl29035 light sensor.
+the lsm6dsl and bme680 share an spi bus with individual chip selects.
+isl29035 is on its own i2c bus.
+
+**Total time spent: 6 hours**
+
+# June 24: schematic - audio and radio
+
+drew the audio section with the cs43131.
+connected it to sai1 for i2s audio data and i2c4 for control registers.
+added the vcp filter capacitor sub-circuit for the charge pump.
+headphone output with dc-blocking caps.
+added the si4735 fm radio module - it outputs i2s audio data directly, so it goes on sai2.
+radio has its own i2c bus for tuning and control, plus an irq line for rds data ready.
+added two antenna connectors with a solder jumper to select between them.
+
+**Total time spent: 5 hours**
+
+# June 25: schematic - storage, oled, microphone
+
+added the micro sd card slot with 4-bit sdmmc interface.
+card detect pin on pc7.
+drew the oled display connector - 8-pin header with spi interface.
+designed the button matrix - 3x3 matrix for the main navigation buttons plus 6 direct buttons for power, volume, record, lock, boot0, and user.
+added esd protection diodes on all button inputs.
+placed the ics-43434 mems microphone - it outputs i2s directly so it connects to a sai block.
+mic has a channel select pin for stereo/mono configuration.
+
+**Total time spent: 5 hours**
+
+# June 26: schematic - leds
+
+added the apa102-2020 led arrays.
+70 leds total split across two sheets - 35 for the sparkle effects and 35 for the spectrum analyzer bar.
+daisy-chained data connection between all leds.
+each led has a 100nf decoupling cap.
+powered from the 5v rail since apa102s have internal current regulation.
+the data and clock lines come from spi-like bitbanging on two gpio pins.
+this took longer than expected because of the sheer number of components to place.
+
+**Total time spent: 6 hours**
+
+# June 28: schematic - pmm integration
+
+started integrating the pmm (power management module) properly.
+the pmm is an stm32-based module that handles battery charging, buck-boost conversion, and power sequencing.
+it communicates with the main mcu over uart for status and i2c for configuration.
+has digital pins for force-on, shutdown, and init signals.
+moved the pmm symbol to a better position on the power sheet and started wiring up all 40 pins.
+23 pins are no-connects (reserved, gpio, nrst, adc_in, fault, enable, pgood, 3v3 output).
+
+**Total time spent: 4 hours**
+
+# June 29: schematic - pmm wiring and top-level
+
+finished wiring the pmm module.
+connected all the signal pins - uart tx/rx, i2c sda/scl, shutdown, force, init.
+added hierarchical labels on the power sheet for all the signals that go to the mcu core.
+redesigned the top-level power sheet pins to match the pmm's native signal names instead of the old generic names.
+the power sheet now exposes 12 pins: +3.3v_audio, +3.3v_aux, force, init, scl, sda, shdn, swclk, swdio, uart_rx, uart_tx, vbus.
+connected gnd pins on both sides to ground symbols.
+wired the vbat+ and 5v_out pins to the appropriate power rails.
+the schematic is almost done now - just need to do a final review and drc pass.
+
+**Total time spent: 5 hours**
+
+# July 22: schematic finalization
+
+did a final review of all schematic sheets.
+caught a few issues - some net names were inconsistent between sheets, fixed those.
+verified all hierarchical labels match between parent and child sheets.
+the sensors sheet was missing its hierarchical labels so it was essentially disconnected.
+will need to wire that up properly or merge the sensor connections into the mcu core sheet.
+schematic is in good shape now, probably 95% complete.
+
+**Total time spent: 3 hours**
+
+# July 25: firmware skeleton
+
+decided to start on the firmware while waiting for motivation to finish the schematic.
+set up a platformio project targeting the stm32h743vit6 with the stm32cube framework.
+wrote the full pin definitions header from the schematic - all 96 pins mapped.
+configured the system clock at 480mhz from the 8mhz hse crystal with pll1.
+set up pll2 for audio clock generation.
+initialized all the i2c buses (sensors, pmm, rtc, audio), spi buses (oled, sensors), and uart (pmm debug).
+wrote the hal msp callbacks for pin muxing on all peripherals.
+gpio init sets up all the button inputs, chip selects, control outputs, and sd card detect.
+firmware compiles clean - 14.9kb flash, 2.3kb ram used.
+wrote the readme for both the firmware and the full project.
+created this journal.
+
+**Total time spent: 4 hours**
