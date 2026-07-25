@@ -137,5 +137,6 @@ gpio init sets up all the button inputs, chip selects, control outputs, and sd c
 firmware compiles clean - 14.9kb flash, 2.3kb ram used.
 wrote the readme for both the firmware and the full project.
 created this journal.
+![main.cpp] (images/firmware/main.png)
 
 **Total time spent: 4 hours**
