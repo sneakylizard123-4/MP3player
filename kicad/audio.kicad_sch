@@ -984,23 +984,13 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector_Audio:AudioJack4_Ground_SwitchTR1"
+		(symbol "Connector_Audio:AudioJack3_Ground_SwitchTR"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "J"
-				(at 0 11.43 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "AudioJack4_Ground_SwitchTR1"
 				(at 0 8.89 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1010,8 +1000,18 @@
 					)
 				)
 			)
+			(property "Value" "AudioJack3_Ground_SwitchTR"
+				(at 0 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(property "Footprint" ""
-				(at -1.27 0 0)
+				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -1022,7 +1022,7 @@
 				)
 			)
 			(property "Datasheet" ""
-				(at -1.27 0 0)
+				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -1032,7 +1032,7 @@
 					)
 				)
 			)
-			(property "Description" "Audio Jack, 4 Poles (Stereo / TRRS), Grounded Sleeve, Switched TR1 Poles (Normalling)"
+			(property "Description" "Audio Jack, 3 Poles (Stereo / TRS), Grounded Sleeve, Switched TR Poles (Normalling)"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1065,10 +1065,10 @@
 					)
 				)
 			)
-			(symbol "AudioJack4_Ground_SwitchTR1_0_1"
+			(symbol "AudioJack3_Ground_SwitchTR_0_1"
 				(rectangle
-					(start -7.62 -5.08)
-					(end -8.89 -7.62)
+					(start -5.08 -5.08)
+					(end -6.35 -7.62)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -1077,9 +1077,57 @@
 						(type outline)
 					)
 				)
+				(polyline
+					(pts
+						(xy -1.905 -5.08) (xy -1.27 -5.715) (xy -0.635 -5.08) (xy -0.635 0) (xy 2.54 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -5.08) (xy 0.635 -5.715) (xy 1.27 -5.08) (xy 2.54 -5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.508 -0.254) (xy 0.762 -0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.778 -5.334) (xy 2.032 -5.842)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(rectangle
-					(start 1.27 6.35)
-					(end -7.62 -10.16)
+					(start 2.54 3.81)
+					(end -5.08 -10.16)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -1090,7 +1138,19 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 2.54) (xy 2.54 2.54)
+						(xy 2.54 2.54) (xy -2.54 2.54) (xy -2.54 -5.08) (xy -3.175 -5.715) (xy -3.81 -5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.54) (xy 0.508 -2.54) (xy 0.508 -0.254) (xy 0.254 -0.762)
 					)
 					(stroke
 						(width 0)
@@ -1102,31 +1162,7 @@
 				)
 				(polyline
 					(pts
-						(xy 2.54 5.08) (xy 1.27 5.08)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 0) (xy 1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -5.08) (xy 1.27 -5.08)
+						(xy 2.54 -7.62) (xy 1.778 -7.62) (xy 1.778 -5.334) (xy 1.524 -5.842)
 					)
 					(stroke
 						(width 0)
@@ -1137,103 +1173,7 @@
 					)
 				)
 			)
-			(symbol "AudioJack4_Ground_SwitchTR1_1_1"
-				(polyline
-					(pts
-						(xy -3.175 -5.08) (xy -2.54 -5.715) (xy -1.905 -5.08) (xy -1.905 0) (xy 1.27 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -5.08) (xy -0.635 -5.715) (xy 0 -5.08) (xy 1.27 -5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.762 -0.254) (xy -0.508 -0.762)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.508 -5.334) (xy 0.762 -5.842)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 5.08) (xy -5.715 5.08) (xy -5.715 -5.08) (xy -6.35 -5.715) (xy -6.985 -5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 2.54) (xy -3.81 2.54) (xy -3.81 -5.08) (xy -4.445 -5.715) (xy -5.08 -5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -2.54) (xy -0.762 -2.54) (xy -0.762 -0.254) (xy -1.016 -0.762)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -7.62) (xy 0.508 -7.62) (xy 0.508 -5.334) (xy 0.254 -5.842)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
+			(symbol "AudioJack3_Ground_SwitchTR_1_1"
 				(pin passive line
 					(at 0 -12.7 90)
 					(length 2.54)
@@ -1262,7 +1202,7 @@
 							)
 						)
 					)
-					(number "R1"
+					(number "R"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1280,7 +1220,7 @@
 							)
 						)
 					)
-					(number "R1N"
+					(number "RN"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1290,24 +1230,6 @@
 				)
 				(pin passive line
 					(at 5.08 2.54 180)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "R2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 5.08 180)
 					(length 2.54)
 					(name ""
 						(effects
@@ -1738,15 +1660,11 @@
 		(uuid "624c6807-f07e-4cb7-87d8-cbbfcd7ad1e0")
 	)
 	(no_connect
-		(at 201.93 114.3)
-		(uuid "ad45c1fe-d1ce-4603-be49-acc833441d3f")
-	)
-	(no_connect
 		(at 148.59 125.73)
 		(uuid "cf683c2f-48cf-47a9-adc3-e74cc1859f21")
 	)
 	(no_connect
-		(at 201.93 121.92)
+		(at 209.55 121.92)
 		(uuid "dd730873-6d91-4847-a3cb-36798db896c8")
 	)
 	(no_connect
@@ -2329,7 +2247,7 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 116.84) (xy 199.39 116.84)
+			(xy 209.55 116.84) (xy 199.39 116.84)
 		)
 		(stroke
 			(width 0)
@@ -2369,7 +2287,7 @@
 	)
 	(wire
 		(pts
-			(xy 207.01 132.08) (xy 207.01 133.35)
+			(xy 214.63 132.08) (xy 214.63 133.35)
 		)
 		(stroke
 			(width 0)
@@ -2399,7 +2317,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 119.38) (xy 201.93 119.38)
+			(xy 190.5 119.38) (xy 209.55 119.38)
 		)
 		(stroke
 			(width 0)
@@ -2469,7 +2387,7 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 124.46) (xy 201.93 124.46)
+			(xy 189.23 124.46) (xy 209.55 124.46)
 		)
 		(stroke
 			(width 0)
@@ -2559,7 +2477,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 127) (xy 201.93 127)
+			(xy 187.96 127) (xy 209.55 127)
 		)
 		(stroke
 			(width 0)
@@ -3039,6 +2957,98 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Audio:AudioJack3_Ground_SwitchTR")
+		(at 214.63 119.38 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3250419b-a17e-4e85-8b62-314886a12988")
+		(property "Reference" "J4"
+			(at 216.535 110.49 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AudioJack3_Ground_SwitchTR"
+			(at 216.535 113.03 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_Audio:Jack_3.5mm_PJ31060-I_Horizontal"
+			(at 214.63 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 214.63 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Audio Jack, 3 Poles (Stereo / TRS), Grounded Sleeve, Switched TR Poles (Normalling)"
+			(at 214.63 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "TN"
+			(uuid "1973efdb-0605-434b-b858-613288e20f21")
+		)
+		(pin "T"
+			(uuid "d5c32d92-4803-4e78-a9e5-29302d2d363e")
+		)
+		(pin "S"
+			(uuid "0548a682-d40c-4f5a-96e6-4da0f3b70cb1")
+		)
+		(pin "RN"
+			(uuid "42e474d5-2957-4d42-95bf-92065264b940")
+		)
+		(pin "G"
+			(uuid "cdfc400a-1e8f-40f1-b5d5-2e380d7eb561")
+		)
+		(pin "R"
+			(uuid "4f13c164-9c39-44bc-84c2-ea7621198024")
+		)
+		(instances
+			(project "MP3player"
+				(path "/c86fdb70-ebb0-4c87-946f-42a0fbefb388/8ec0c330-8240-4e36-aed2-8b84a8e7f410"
+					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 175.26 74.93 0)
 		(unit 1)
@@ -3150,7 +3160,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 199.39 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -3232,7 +3242,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 186.69 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -3314,7 +3324,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 109.22 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -3396,7 +3406,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 160.02 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -3478,7 +3488,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 180.34 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -3560,7 +3570,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 160.02 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -3610,7 +3620,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 207.01 133.35 0)
+		(at 214.63 133.35 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3621,7 +3631,7 @@
 		(fields_autoplaced yes)
 		(uuid "99edc315-eeb2-40de-b4c0-6dda0a024435")
 		(property "Reference" "#PWR048"
-			(at 207.01 139.7 0)
+			(at 214.63 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3632,7 +3642,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 207.01 138.43 0)
+			(at 214.63 138.43 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3642,7 +3652,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 207.01 133.35 0)
+			(at 214.63 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3653,7 +3663,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 207.01 133.35 0)
+			(at 214.63 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3664,7 +3674,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 207.01 133.35 0)
+			(at 214.63 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4032,7 +4042,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 170.18 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -4192,7 +4202,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 97.79 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -4351,7 +4361,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 160.02 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -4394,101 +4404,6 @@
 			(project "MP3player"
 				(path "/c86fdb70-ebb0-4c87-946f-42a0fbefb388/8ec0c330-8240-4e36-aed2-8b84a8e7f410"
 					(reference "C38")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Audio:AudioJack4_Ground_SwitchTR1")
-		(at 207.01 119.38 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "fcca40b1-b1ce-4c9c-8e60-b2295e0df0ac")
-		(property "Reference" "J3"
-			(at 210.2485 107.95 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SHOU HAN PJ-342"
-			(at 210.2485 110.49 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 208.28 119.38 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 208.28 119.38 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Audio Jack, 4 Poles (Stereo / TRRS), Grounded Sleeve, Switched TR1 Poles (Normalling)"
-			(at 207.01 119.38 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "S"
-			(uuid "fd9c9735-d655-47d6-a503-2c120b64e6b7")
-		)
-		(pin "TN"
-			(uuid "d5f351dc-0b7b-4388-82ce-f56b009f7d27")
-		)
-		(pin "R2"
-			(uuid "3d4a405b-2b6f-4294-a360-f930c02bb6a7")
-		)
-		(pin "T"
-			(uuid "c966c477-f9dd-48ca-89f8-0faf495b91ae")
-		)
-		(pin "G"
-			(uuid "1f7a589a-c82d-403c-acd8-6a1873015ee9")
-		)
-		(pin "R1N"
-			(uuid "2631b06e-4789-4ea5-9628-3b7d0c4b4396")
-		)
-		(pin "R1"
-			(uuid "5b34a192-8854-4095-acaf-fb2032e5f2f3")
-		)
-		(instances
-			(project "MP3player"
-				(path "/c86fdb70-ebb0-4c87-946f-42a0fbefb388/8ec0c330-8240-4e36-aed2-8b84a8e7f410"
-					(reference "J3")
 					(unit 1)
 				)
 			)
