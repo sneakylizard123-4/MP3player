@@ -973,7 +973,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6a904e7f-51e0-4e28-85bf-fa8070e7420d")
-		(property "Reference" "C129"
+		(property "Reference" "C53"
 			(at 44.45 21.5962 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1037,7 +1037,7 @@
 		(instances
 			(project "MP3player"
 				(path "/c86fdb70-ebb0-4c87-946f-42a0fbefb388/3c7a344c-7f88-4b5c-bff2-9cbba23de578"
-					(reference "C129")
+					(reference "C53")
 					(unit 1)
 				)
 			)
@@ -1155,7 +1155,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 34.29 39.37 0)
 			(hide yes)
 			(show_name no)

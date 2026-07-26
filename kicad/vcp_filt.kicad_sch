@@ -436,7 +436,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4f16709b-219e-4257-a247-1208d9aacfe8")
-		(property "Reference" "C132"
+		(property "Reference" "C56"
 			(at 43.18 68.5862 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -500,7 +500,7 @@
 		(instances
 			(project "MP3player"
 				(path "/c86fdb70-ebb0-4c87-946f-42a0fbefb388/8ec0c330-8240-4e36-aed2-8b84a8e7f410/fae2aa14-d6a3-4ea7-96f8-e52515107470"
-					(reference "C132")
+					(reference "C56")
 					(unit 1)
 				)
 			)
@@ -518,7 +518,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "76c195d3-5405-4371-be25-892620838137")
-		(property "Reference" "C133"
+		(property "Reference" "C57"
 			(at 53.34 53.3462 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -582,7 +582,7 @@
 		(instances
 			(project "MP3player"
 				(path "/c86fdb70-ebb0-4c87-946f-42a0fbefb388/8ec0c330-8240-4e36-aed2-8b84a8e7f410/fae2aa14-d6a3-4ea7-96f8-e52515107470"
-					(reference "C133")
+					(reference "C57")
 					(unit 1)
 				)
 			)
@@ -600,7 +600,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8ac47498-3f72-4c7a-a8a0-8935d1c42e8b")
-		(property "Reference" "C131"
+		(property "Reference" "C55"
 			(at 43.18 60.9662 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -664,7 +664,7 @@
 		(instances
 			(project "MP3player"
 				(path "/c86fdb70-ebb0-4c87-946f-42a0fbefb388/8ec0c330-8240-4e36-aed2-8b84a8e7f410/fae2aa14-d6a3-4ea7-96f8-e52515107470"
-					(reference "C131")
+					(reference "C55")
 					(unit 1)
 				)
 			)
@@ -682,7 +682,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "99f8a13f-2a4b-4c88-abfa-c6aa967959b8")
-		(property "Reference" "C130"
+		(property "Reference" "C54"
 			(at 43.18 53.3462 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -746,7 +746,7 @@
 		(instances
 			(project "MP3player"
 				(path "/c86fdb70-ebb0-4c87-946f-42a0fbefb388/8ec0c330-8240-4e36-aed2-8b84a8e7f410/fae2aa14-d6a3-4ea7-96f8-e52515107470"
-					(reference "C130")
+					(reference "C54")
 					(unit 1)
 				)
 			)
@@ -764,7 +764,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f38dafd3-8398-4197-8cd5-51cf11c88cda")
-		(property "Reference" "C134"
+		(property "Reference" "C58"
 			(at 63.5 53.3462 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -828,7 +828,7 @@
 		(instances
 			(project "MP3player"
 				(path "/c86fdb70-ebb0-4c87-946f-42a0fbefb388/8ec0c330-8240-4e36-aed2-8b84a8e7f410/fae2aa14-d6a3-4ea7-96f8-e52515107470"
-					(reference "C134")
+					(reference "C58")
 					(unit 1)
 				)
 			)

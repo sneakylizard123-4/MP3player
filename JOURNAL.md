@@ -112,15 +112,12 @@ the schematic is almost done now - just need to do a final review and drc pass.
 
 **Total time spent: 5 hours**
 
-# July 22: schematic finalization
+# July 22: schematic review
 
-did a final review of all schematic sheets.
+did a review of all schematic sheets.
 caught a few issues - some net names were inconsistent between sheets, fixed those.
-verified all hierarchical labels match between parent and child sheets.
 the sensors sheet was missing its hierarchical labels so it was essentially disconnected.
-will need to wire that up properly or merge the sensor connections into the mcu core sheet.
 schematic is in good shape now, probably 95% complete.
-![full schematic](images/schematics/01-root.png)
 
 **Total time spent: 3 hours**
 
@@ -140,3 +137,23 @@ created this journal.
 ![main.cpp] (images/firmware/main.png)
 
 **Total time spent: 4 hours**
+
+# July 26: schematic rework
+
+major rework of the power section. ditched the pmm module entirely - it was overkill for what we actually need.
+replaced it with a discrete bq24090dchg battery charger (1a single-cell li-ion) with ntc thermistor monitoring and charge led.
+added a tps613222adbv boost converter to step the battery up to 5v for the apa102 leds.
+kept the tps7a4701 and tlv70233 regulators for the analog and digital 3.3v rails.
+the power sheet is much simpler now - just 3 pins out: +3.3v_audio, +3.3v_aux, and vbus. no more uart/i2c control interface.
+removed the cr2032 battery cell and backup battery from the mcu core sheet.
+merged the sensors into the stm32core sheet directly - no more separate sensors sheet.
+removed the vcp filter sheet - those caps are now inline on the power sheet.
+renamed the sparkles sheet to led spectrum and simplified it heavily.
+changed the crystal load caps from 18pf to 12pf for better stability.
+swapped testpoints for mounting holes on the root sheet.
+button switches changed to acdsv6-4448ti-g tactile switches.
+schematic is now 8 sheets, down from 12. much cleaner.
+![power rework](images/schematics/02-power.png)
+![root overview](images/schematics/01-root.png)
+
+**Total time spent: 5 hours**

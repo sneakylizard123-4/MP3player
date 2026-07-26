@@ -990,8 +990,8 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "J"
-				(at 0 8.89 0)
+			(property "Reference" "J4"
+				(at -1.905 8.89 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -1001,7 +1001,7 @@
 				)
 			)
 			(property "Value" "AudioJack3_Ground_SwitchTR"
-				(at 0 6.35 0)
+				(at -1.905 6.35 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -1010,7 +1010,7 @@
 					)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "Connector_Audio:Jack_3.5mm_PJ31060-I_Horizontal"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1184,43 +1184,7 @@
 							)
 						)
 					)
-					(number "G"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "R"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -2.54 180)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "RN"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1238,7 +1202,25 @@
 							)
 						)
 					)
-					(number "S"
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1256,7 +1238,25 @@
 							)
 						)
 					)
-					(number "T"
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1274,7 +1274,7 @@
 							)
 						)
 					)
-					(number "TN"
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2758,7 +2758,7 @@
 				)
 			)
 		)
-		(property "Footprint" "easyeda2kicad:TQFN-40_L5.0-W5.0-P0.40-TL-EP3.5"
+		(property "Footprint" "Package_DFN_QFN:TQFN-40-1EP_5x5mm_P0.4mm_EP3.5x3.5mm"
 			(at 143.51 151.13 0)
 			(hide yes)
 			(show_name no)
@@ -3021,22 +3021,22 @@
 				)
 			)
 		)
-		(pin "TN"
+		(pin "6"
 			(uuid "1973efdb-0605-434b-b858-613288e20f21")
 		)
-		(pin "T"
+		(pin "2"
 			(uuid "d5c32d92-4803-4e78-a9e5-29302d2d363e")
 		)
-		(pin "S"
+		(pin "1"
 			(uuid "0548a682-d40c-4f5a-96e6-4da0f3b70cb1")
 		)
-		(pin "RN"
+		(pin "3"
 			(uuid "42e474d5-2957-4d42-95bf-92065264b940")
 		)
-		(pin "G"
+		(pin "4"
 			(uuid "cdfc400a-1e8f-40f1-b5d5-2e380d7eb561")
 		)
-		(pin "R"
+		(pin "5"
 			(uuid "4f13c164-9c39-44bc-84c2-ea7621198024")
 		)
 		(instances
@@ -4282,7 +4282,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 127 57.15 0)
 			(hide yes)
 			(show_name no)

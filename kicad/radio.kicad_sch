@@ -3003,7 +3003,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm"
 			(at 50.8 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -3570,7 +3570,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 60.96 41.91 0)
 			(hide yes)
 			(show_name no)
@@ -3647,7 +3647,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 130.81 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -3729,7 +3729,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 160.02 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -4048,7 +4048,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 50.8 30.48 0)
 			(hide yes)
 			(show_name no)
@@ -4130,7 +4130,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 170.18 41.91 0)
 			(hide yes)
 			(show_name no)

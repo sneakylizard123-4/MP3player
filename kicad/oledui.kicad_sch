@@ -2782,88 +2782,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 203.2 38.1 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "07394e70-f83b-4425-bee2-ff846430612a")
-		(property "Reference" "SW15"
-			(at 207.01 36.8299 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "SW_Push"
-			(at 207.01 39.3699 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KSC9xxJ"
-			(at 208.28 38.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 208.28 38.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 203.2 38.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "8b3e7853-81e7-4f29-800d-1395d1482e7a")
-		)
-		(pin "2"
-			(uuid "3ef26842-0fa5-46f8-8335-b9fd0721c686")
-		)
-		(instances
-			(project "MP3player"
-				(path "/c86fdb70-ebb0-4c87-946f-42a0fbefb388/512004e9-a1da-496c-8166-a36946c707cc"
-					(reference "SW15")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 106.68 166.37 0)
 		(unit 1)
@@ -2973,7 +2891,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 110.49 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -3055,7 +2973,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KSC9xxJ"
+		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2"
 			(at 157.48 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -3104,6 +3022,88 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 177.8 88.9 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1841af1a-b766-46c2-ad27-b23aef3d89f8")
+		(property "Reference" "SW14"
+			(at 181.61 87.6299 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 181.61 90.1699 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2"
+			(at 182.88 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 182.88 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 177.8 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2c27aba8-f7e0-40c0-ab03-de53139a52f9")
+		)
+		(pin "2"
+			(uuid "f2bf005f-c2fa-414d-b234-ccb7bcbc23c5")
+		)
+		(instances
+			(project "MP3player"
+				(path "/c86fdb70-ebb0-4c87-946f-42a0fbefb388/512004e9-a1da-496c-8166-a36946c707cc"
+					(reference "SW14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Diode:ACDSV6-4448TI-G")
 		(at 215.9 76.2 180)
 		(unit 2)
@@ -3135,7 +3135,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6"
 			(at 215.9 71.755 0)
 			(hide yes)
 			(show_name no)
@@ -3227,7 +3227,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6"
 			(at 215.9 46.355 0)
 			(hide yes)
 			(show_name no)
@@ -3288,88 +3288,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 152.4 88.9 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1e3eaecb-b161-4a82-a668-8b6a5659cc5e")
-		(property "Reference" "SW11"
-			(at 156.21 87.6299 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "SW_Push"
-			(at 156.21 90.1699 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KSC9xxJ"
-			(at 157.48 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 157.48 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 152.4 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "6bdd8950-120b-48fc-8c2d-f629d50319ba")
-		)
-		(pin "2"
-			(uuid "b10a100a-437c-4c2b-b147-c316b39e3b09")
-		)
-		(instances
-			(project "MP3player"
-				(path "/c86fdb70-ebb0-4c87-946f-42a0fbefb388/512004e9-a1da-496c-8166-a36946c707cc"
-					(reference "SW11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Diode:ACDSV6-4448TI-G")
 		(at 165.1 101.6 180)
 		(unit 3)
@@ -3401,7 +3319,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6"
 			(at 165.1 97.155 0)
 			(hide yes)
 			(show_name no)
@@ -3462,6 +3380,88 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 152.4 63.5 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "27da5432-650d-4d22-b5f5-7722d531de50")
+		(property "Reference" "SW10"
+			(at 156.21 62.2299 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 156.21 64.7699 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2"
+			(at 157.48 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 157.48 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 152.4 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "16b6baf6-00f5-4a2c-895d-11b6a4e6303d")
+		)
+		(pin "2"
+			(uuid "5302506f-8038-4191-9622-abbf9a801561")
+		)
+		(instances
+			(project "MP3player"
+				(path "/c86fdb70-ebb0-4c87-946f-42a0fbefb388/512004e9-a1da-496c-8166-a36946c707cc"
+					(reference "SW10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small_US")
 		(at 110.49 165.1 90)
 		(unit 1)
@@ -3493,7 +3493,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 110.49 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -3543,7 +3543,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push")
-		(at 177.8 38.1 270)
+		(at 203.2 88.9 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3552,9 +3552,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "2f13e153-e91a-4deb-a23a-722d34774d49")
-		(property "Reference" "SW12"
-			(at 181.61 36.8299 90)
+		(uuid "315c8d45-b19c-49ac-a7a6-211d2916c4e7")
+		(property "Reference" "SW17"
+			(at 207.01 87.6299 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3565,7 +3565,7 @@
 			)
 		)
 		(property "Value" "SW_Push"
-			(at 181.61 39.3699 90)
+			(at 207.01 90.1699 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3575,8 +3575,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KSC9xxJ"
-			(at 182.88 38.1 0)
+		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2"
+			(at 208.28 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3587,7 +3587,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 182.88 38.1 0)
+			(at 208.28 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3598,7 +3598,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 177.8 38.1 0)
+			(at 203.2 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3609,15 +3609,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "132dc92f-3e3b-4c1d-a446-2e2b4ddbb9b5")
+			(uuid "e72451c7-0f0d-4dc2-8888-092e97b34a02")
 		)
 		(pin "2"
-			(uuid "1670191a-991d-4184-9037-0fe397dd1505")
+			(uuid "59d3780c-bde2-4858-8274-dfe237a1be4c")
 		)
 		(instances
 			(project "MP3player"
 				(path "/c86fdb70-ebb0-4c87-946f-42a0fbefb388/512004e9-a1da-496c-8166-a36946c707cc"
-					(reference "SW12")
+					(reference "SW17")
 					(unit 1)
 				)
 			)
@@ -3733,7 +3733,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6"
 			(at 215.9 97.155 0)
 			(hide yes)
 			(show_name no)
@@ -3983,7 +3983,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 110.49 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -4063,7 +4063,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6"
 			(at 190.5 71.755 0)
 			(hide yes)
 			(show_name no)
@@ -4119,6 +4119,88 @@
 				(path "/c86fdb70-ebb0-4c87-946f-42a0fbefb388/512004e9-a1da-496c-8166-a36946c707cc"
 					(reference "D2")
 					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 177.8 38.1 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4d50a176-18f7-4a7d-830f-d8f8cfb5eb29")
+		(property "Reference" "SW12"
+			(at 181.61 36.8299 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 181.61 39.3699 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2"
+			(at 182.88 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 182.88 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 177.8 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3307df0d-e35f-4b33-a06c-55957a9ea361")
+		)
+		(pin "2"
+			(uuid "247e1a6f-255b-402c-a7df-f985afec5eb7")
+		)
+		(instances
+			(project "MP3player"
+				(path "/c86fdb70-ebb0-4c87-946f-42a0fbefb388/512004e9-a1da-496c-8166-a36946c707cc"
+					(reference "SW12")
+					(unit 1)
 				)
 			)
 		)
@@ -4443,7 +4525,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push")
-		(at 177.8 88.9 270)
+		(at 152.4 88.9 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4452,9 +4534,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "61ee3ae1-3b4d-428a-b9b1-8acc3e42018d")
-		(property "Reference" "SW14"
-			(at 181.61 87.6299 90)
+		(uuid "61969d4a-e778-4a0c-8610-497697c5a146")
+		(property "Reference" "SW11"
+			(at 156.21 87.6299 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4465,7 +4547,7 @@
 			)
 		)
 		(property "Value" "SW_Push"
-			(at 181.61 90.1699 90)
+			(at 156.21 90.1699 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4475,8 +4557,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KSC9xxJ"
-			(at 182.88 88.9 0)
+		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2"
+			(at 157.48 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4487,7 +4569,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 182.88 88.9 0)
+			(at 157.48 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4498,7 +4580,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 177.8 88.9 0)
+			(at 152.4 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4509,15 +4591,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "1cb566ea-6785-42fb-9010-e49ea59399a8")
+			(uuid "6c983fc2-6f40-4327-b59a-5434ca2c72af")
 		)
 		(pin "2"
-			(uuid "0d568a1a-b9b6-458f-9603-a23c71ddf063")
+			(uuid "95faba7c-937e-433d-84af-8febc2efd7d4")
 		)
 		(instances
 			(project "MP3player"
 				(path "/c86fdb70-ebb0-4c87-946f-42a0fbefb388/512004e9-a1da-496c-8166-a36946c707cc"
-					(reference "SW14")
+					(reference "SW11")
 					(unit 1)
 				)
 			)
@@ -4555,7 +4637,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6"
 			(at 165.1 46.355 0)
 			(hide yes)
 			(show_name no)
@@ -4704,7 +4786,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "8311fe90-3798-4b7d-9c74-ae2855d7df78")
+		(uuid "7631dab7-9c0e-4cf8-9e43-35851195272e")
 		(property "Reference" "SW16"
 			(at 207.01 62.2299 90)
 			(show_name no)
@@ -4727,7 +4809,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KSC9xxJ"
+		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2"
 			(at 208.28 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -4761,10 +4843,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "6a116153-a234-4bbe-9110-335d1fad2d6c")
+			(uuid "149d7fde-dff5-4456-b5a1-7174ccd358b3")
 		)
 		(pin "2"
-			(uuid "522f9624-dd4b-496e-a445-dc7a7b16a3df")
+			(uuid "66aeffc8-4ecb-49e0-ad32-3a04eb054860")
 		)
 		(instances
 			(project "MP3player"
@@ -4777,7 +4859,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push")
-		(at 152.4 63.5 270)
+		(at 177.8 63.5 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4786,9 +4868,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "84c5e2f3-97f8-49f8-b131-71b54fec3e9f")
-		(property "Reference" "SW10"
-			(at 156.21 62.2299 90)
+		(uuid "8ed416ea-44cb-4962-8b1c-a6327d6ed394")
+		(property "Reference" "SW13"
+			(at 181.61 62.2299 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4799,7 +4881,7 @@
 			)
 		)
 		(property "Value" "SW_Push"
-			(at 156.21 64.7699 90)
+			(at 181.61 64.7699 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4809,8 +4891,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KSC9xxJ"
-			(at 157.48 63.5 0)
+		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2"
+			(at 182.88 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4821,7 +4903,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 157.48 63.5 0)
+			(at 182.88 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4832,7 +4914,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 152.4 63.5 0)
+			(at 177.8 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4843,15 +4925,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "3477d1ba-d63f-4f6c-841b-4c37afdd1948")
+			(uuid "02f5d985-5433-4ed7-858d-9ad0babf46b8")
 		)
 		(pin "2"
-			(uuid "f1d3a0e7-520f-45dc-b22b-34dbe4ec57b6")
+			(uuid "0e5994cd-5c67-4979-a627-fd62785664ac")
 		)
 		(instances
 			(project "MP3player"
 				(path "/c86fdb70-ebb0-4c87-946f-42a0fbefb388/512004e9-a1da-496c-8166-a36946c707cc"
-					(reference "SW10")
+					(reference "SW13")
 					(unit 1)
 				)
 			)
@@ -4889,7 +4971,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6"
 			(at 190.5 97.155 0)
 			(hide yes)
 			(show_name no)
@@ -5187,170 +5269,6 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push")
-		(at 203.2 88.9 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ac14f5a0-1196-40c8-b281-6d67236d41da")
-		(property "Reference" "SW17"
-			(at 207.01 87.6299 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "SW_Push"
-			(at 207.01 90.1699 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KSC9xxJ"
-			(at 208.28 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 208.28 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 203.2 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "12fca3d6-dded-4888-908d-b21565632297")
-		)
-		(pin "2"
-			(uuid "a5603897-d05c-495b-b311-440a1d925ab2")
-		)
-		(instances
-			(project "MP3player"
-				(path "/c86fdb70-ebb0-4c87-946f-42a0fbefb388/512004e9-a1da-496c-8166-a36946c707cc"
-					(reference "SW17")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 177.8 63.5 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ae9ba36f-4205-48d0-be34-f67aba0b8012")
-		(property "Reference" "SW13"
-			(at 181.61 62.2299 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "SW_Push"
-			(at 181.61 64.7699 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KSC9xxJ"
-			(at 182.88 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 182.88 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 177.8 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "01529b40-120e-4967-b48e-bea41dd62724")
-		)
-		(pin "2"
-			(uuid "5cd589a1-9af5-4046-9f6a-f56fa663242a")
-		)
-		(instances
-			(project "MP3player"
-				(path "/c86fdb70-ebb0-4c87-946f-42a0fbefb388/512004e9-a1da-496c-8166-a36946c707cc"
-					(reference "SW13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
 		(at 120.65 88.9 0)
 		(unit 1)
 		(body_style 1)
@@ -5461,7 +5379,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 21.59 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -5510,6 +5428,88 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 203.2 38.1 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bc20aa31-d73f-4869-b9ec-82f7e5862d5e")
+		(property "Reference" "SW15"
+			(at 207.01 36.8299 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 207.01 39.3699 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2"
+			(at 208.28 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 208.28 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 203.2 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "032e4b4f-e5b5-45e1-98c9-e81868da16f1")
+		)
+		(pin "2"
+			(uuid "43c715ec-3907-4707-9f4e-5f4fb7584f1c")
+		)
+		(instances
+			(project "MP3player"
+				(path "/c86fdb70-ebb0-4c87-946f-42a0fbefb388/512004e9-a1da-496c-8166-a36946c707cc"
+					(reference "SW15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Diode:ACDSV6-4448TI-G")
 		(at 165.1 76.2 180)
 		(unit 2)
@@ -5541,7 +5541,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6"
 			(at 165.1 71.755 0)
 			(hide yes)
 			(show_name no)
@@ -5633,7 +5633,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical_SMD_Pin1Right"
 			(at 63.5 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -5731,7 +5731,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 110.49 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -5891,7 +5891,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6"
 			(at 190.5 46.355 0)
 			(hide yes)
 			(show_name no)
@@ -5983,7 +5983,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 59.69 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -6063,7 +6063,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 110.49 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -6221,7 +6221,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 110.49 63.5 0)
 			(hide yes)
 			(show_name no)
