@@ -19974,14 +19974,14 @@
 			)
 		)
 	)
-	(footprint "Inductor_SMD:L_0805_2012Metric"
+	(footprint "Inductor_SMD:L_1206_3216Metric"
 		(layer "F.Cu")
 		(uuid "bb8c734c-0690-414b-a561-d3fd2b5c8fda")
-		(at 44.5 58)
-		(descr "Inductor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 80, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
+		(at 44 58)
+		(descr "Inductor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 80, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "inductor")
 		(property "Reference" "L1"
-			(at -3 0 0)
+			(at -3.5 -0.5 0)
 			(layer "F.SilkS")
 			(uuid "967105b3-73f9-492b-a872-a2c37002001e")
 			(effects
@@ -19992,7 +19992,7 @@
 			)
 		)
 		(property "Value" "450uH"
-			(at 0 1.55 0)
+			(at 0 1.9 0)
 			(layer "F.Fab")
 			(uuid "491dd41d-58ed-4506-be1e-9eb9ee87d7fa")
 			(effects
@@ -20049,8 +20049,8 @@
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
-			(start -0.399622 -0.56)
-			(end 0.399622 -0.56)
+			(start -0.835242 -0.91)
+			(end 0.835242 -0.91)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -20059,8 +20059,8 @@
 			(uuid "c9c9319a-399a-473d-9158-30de54267a75")
 		)
 		(fp_line
-			(start -0.399622 0.56)
-			(end 0.399622 0.56)
+			(start -0.835242 0.91)
+			(end 0.835242 0.91)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -20069,8 +20069,8 @@
 			(uuid "6325cdd9-9c8f-42a1-a216-9ac57def8dd7")
 		)
 		(fp_rect
-			(start -1.75 -0.85)
-			(end 1.75 0.85)
+			(start -2.35 -1.2)
+			(end 2.35 1.2)
 			(stroke
 				(width 0.05)
 				(type solid)
@@ -20080,8 +20080,8 @@
 			(uuid "a6ec4211-840b-4344-a423-1ab417e4b7b6")
 		)
 		(fp_rect
-			(start -1 -0.45)
-			(end 1 0.45)
+			(start -1.6 -0.8)
+			(end 1.6 0.8)
 			(stroke
 				(width 0.1)
 				(type solid)
@@ -20096,33 +20096,33 @@
 			(uuid "b8b4ec38-1094-474a-ab62-7e9f31f13fdf")
 			(effects
 				(font
-					(size 0.5 0.5)
-					(thickness 0.08)
+					(size 0.8 0.8)
+					(thickness 0.12)
 				)
 			)
 		)
 		(pad "1" smd roundrect
-			(at -1.0625 0)
-			(size 0.875 1.2)
+			(at -1.575 0)
+			(size 1.05 1.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
+			(roundrect_rratio 0.238095)
 			(net "Net-(J7-In)")
 			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "76ee28e7-f059-4dbf-b68a-97e414262f1d")
 		)
 		(pad "2" smd roundrect
-			(at 1.0625 0)
-			(size 0.875 1.2)
+			(at 1.575 0)
+			(size 1.05 1.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
+			(roundrect_rratio 0.238095)
 			(net "GND")
 			(pinfunction "2_2")
 			(pintype "passive")
 			(uuid "09d8e5ee-d7d5-4051-be07-165a63e64086")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_0805_2012Metric.step"
+		(model "${KICAD10_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_1206_3216Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -44120,20 +44120,28 @@
 		(uuid "e8bc8c8f-d19d-49db-8ac3-d383e54c5315")
 	)
 	(segment
-		(start 43.4375 58)
-		(end 43.4375 55.7875)
-		(width 0.2)
-		(layer "F.Cu")
-		(net "Net-(J7-In)")
-		(uuid "5f7a6ef3-1e6d-4474-81b1-daf911131298")
-	)
-	(segment
 		(start 43.4375 55.7875)
 		(end 43.725 55.5)
 		(width 0.2)
 		(layer "F.Cu")
 		(net "Net-(J7-In)")
-		(uuid "b0316d04-257a-45d9-bcfe-1286fac5fa64")
+		(uuid "135a830a-1e2d-4c0d-84e4-0a786a996b22")
+	)
+	(segment
+		(start 43.4375 56.9875)
+		(end 43.4375 55.7875)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "Net-(J7-In)")
+		(uuid "4866a9ad-fd2a-4811-8067-9aa93a56acd9")
+	)
+	(segment
+		(start 42.425 58)
+		(end 43.4375 56.9875)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "Net-(J7-In)")
+		(uuid "a9441917-8d09-4daf-acb3-c9c246dc2f0b")
 	)
 	(via
 		(at 43.725 55.5)
