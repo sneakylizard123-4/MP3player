@@ -141,7 +141,11 @@ Y1,8MHz TXC AA08000002,Crystal:Crystal_SMD_5032-2Pin_5.0x3.2mm,1,C111903,AA08000
 SW9-SW17,SW_Push,Button_Switch_SMD:CK_KMR2,9,C72443,KMR221GLFS,C&K,0.6515,https://www.lcsc.com/product-detail/C72443.html
 —,0Ω,R_0603,1,C4149532,CR16000J,Meritek,0.0026,https://www.lcsc.com/product-detail/C4149532.html
 —,2.2kΩ NTC,0603,2,C17181196,B57321V2222H060,TDK,0.0799,https://www.lcsc.com/product-detail/C17181196.html
+PARTS TOTAL,,,,,,,,75.82
 
 PCB,1,75x50mm,1,,,JLCPCB,101,
 Stencil,1,100x100mm,1,,,JLCPCB,27,
 PCB shipping,1,,1,,,GSDL,12,
+PCB TOTAL,,,,,,,,140.00
+
+ALL TOTAL,,,,,,,,215.82
