@@ -118,6 +118,7 @@ did a review of all schematic sheets.
 caught a few issues - some net names were inconsistent between sheets, fixed those.
 the sensors sheet was missing its hierarchical labels so it was essentially disconnected.
 schematic is in good shape now, probably 95% complete.
+![schematic](images/schematics/01-root.png)
 
 **Total time spent: 3 hours**
 
@@ -134,7 +135,7 @@ gpio init sets up all the button inputs, chip selects, control outputs, and sd c
 firmware compiles clean - 14.9kb flash, 2.3kb ram used.
 wrote the readme for both the firmware and the full project.
 created this journal.
-![main.cpp] (images/firmware/main.png)
+![main.cpp](images/firmware/main.png)
 
 **Total time spent: 4 hours**
 
