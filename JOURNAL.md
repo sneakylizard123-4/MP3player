@@ -157,3 +157,21 @@ schematic is now 8 sheets, down from 12. much cleaner.
 ![root overview](images/schematics/01-root.png)
 
 **Total time spent: 5 hours**
+
+# July 27: pcb layout
+
+laid out the board in kicad. 6-layer stackup with 2 internal power planes, 1.6mm thickness.
+roughly 50x70mm form factor for a portable handheld player.
+routed all the high-speed interfaces first - sdmmc for the sd card, sai/i2s for audio and mic, and the usb differential pair.
+kept the analog audio section separated from the digital and power sections.
+placed the cs43131 dac close to the headphone jack to minimize analog trace lengths.
+bq24090dgq charger and tps613222adbv boost on the power section with proper thermal pad stitching.
+apa102 leds arranged along the bottom and right edges for the spectrum bar.
+oled display connector at the top edge for a flip-up screen.
+button matrix traces routed efficiently through the center.
+mounting holes in the corners for enclosure mounting.
+ran a full drc pass - all clearance and creepage rules pass. no unconnected nets.
+![pcb front](images/pcb/pcb-front.png)
+![pcb back](images/pcb/pcb-back.png)
+
+**Total time spent: 6 hours**

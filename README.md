@@ -101,7 +101,13 @@ pio run -t upload    # flash via SWD
 ## Status
 
 - [x] Schematic (8 sheets, complete)
+- [x] PCB layout (6-layer, 1.6mm, ~50×70mm)
 - [x] Firmware skeleton (clock config, GPIO, I2C, SPI, UART init)
-- [ ] PCB layout
 - [ ] Firmware drivers (audio, SD, OLED, LEDs, sensors, radio, buttons)
 - [ ] Firmware application (playback, UI, recording)
+
+## PCB
+
+6-layer board, 1.6mm thickness, roughly  50×70mm. Top/bottom signal layers with two internal power planes (In1.Cu, In2.Cu) and two additional inner signal layers (In3.Cu, In4.Cu).
+![PCB front](images/pcb/pcb-front.png)
+![PCB back](images/pcb/pcb-back.png)
