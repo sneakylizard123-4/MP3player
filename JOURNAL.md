@@ -183,3 +183,5 @@ fixed small silkscreen errors and added penguin
 kicad keeps crashing for some reason, probably due to wayland errors
 ![penguin](images/penguin/pcb-penguin.png)
 ![penguin2](images/penguin/pcb-render.png)
+
+**Total time spent: 1 hour**
