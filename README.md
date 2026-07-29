@@ -138,6 +138,45 @@ pio run -t upload    # flash via SWD
 
 Full BOM with footprints: [`BOM.csv`](BOM.csv)
 
+## Fabrication
+
+**PCB** — JLCPCB (MP3player_Y33)
+
+| Spec | Value |
+|------|-------|
+| Build Time | 5–6 days |
+| Base Material | FR-4 TG155 |
+| Layers | 6 |
+| Dimensions | 50 × 70 mm |
+| Qty | 5 |
+| Thickness | 1.6 mm |
+| PCB Color | Purple |
+| Silkscreen | White (Ink-jet) |
+| Via Covering | Epoxy filled & capped |
+| Surface Finish | ENIG (1µ" gold) |
+| Outer Copper | 1 oz |
+| Inner Copper | 0.5 oz |
+| Min via hole/diameter | 0.3 mm / 0.4–0.45 mm |
+| Electrical Test | Flying probe, fully tested |
+| 4-Wire Kelvin Test | Yes |
+| Appearance | IPC Class 2 |
+| Board Outline Tolerance | ±0.2 mm |
+| Gross Weight | 0.17 kg |
+
+**Stencil** — JLCPCB
+
+| Spec | Value |
+|------|-------|
+| Build Time | 2–3 days |
+| Dimension | 380 × 280 mm |
+| Stencil Side | Top & Bottom (separate) |
+| Stencil Qty | 2 |
+| Thickness | Auto-selected |
+| Polishing | Electropolishing |
+| Nano-Coating | Yes |
+| Engrave Text | Yes |
+| Gross Weight | 0.17 kg |
+
 ## Status
 
 - [x] Schematic (8 sheets, complete)

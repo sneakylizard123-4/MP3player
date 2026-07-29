@@ -196,3 +196,5 @@ had to change inductor size because there are no 450uH 0805 signal inductors, in
 kicad isn't crashing anymore??
 bom is a little expensive, will need to choose parts i might already have
 ![cart](images/cart/image.png)
+
+**Total time spent: 2h**
