@@ -1,0 +1,1973 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "092e7065-9290-4b99-a154-04a3b00712b0")
+	(paper "A4")
+	(lib_symbols
+		(symbol "Device:C_Small"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.254 1.778 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C_Small"
+				(at 0.254 -2.032 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Unpolarized capacitor, small symbol"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "capacitor cap"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "C_Small_0_1"
+				(polyline
+					(pts
+						(xy -1.524 0.508) (xy 1.524 0.508)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
+					)
+					(stroke
+						(width 0.3302)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 2.032)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 2.032)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "LED:APA102-2020"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 5.08 5.715 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right bottom)
+				)
+			)
+			(property "Value" "APA102-2020"
+				(at 1.27 -5.715 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "LED_SMD:LED-APA102-2020"
+				(at 1.27 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Datasheet" "http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf"
+				(at 2.54 -9.525 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Description" "RGB LED with integrated controller"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "RGB LED addressable 8bit pwm 5bit greyscale"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "LED*APA102*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "APA102-2020_0_0"
+				(text "RGB"
+					(at 2.286 -4.191 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+			)
+			(symbol "APA102-2020_0_1"
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 1.778 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -3.556) (xy 1.778 -3.556)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.286 -1.524) (xy 1.27 -2.54) (xy 1.27 -2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.286 -2.54) (xy 1.27 -3.556) (xy 1.27 -3.048)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.683 -1.016) (xy 3.683 -3.556) (xy 3.683 -4.064)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.699 -1.524) (xy 2.667 -1.524) (xy 3.683 -3.556) (xy 4.699 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.699 -3.556) (xy 2.667 -3.556)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 5.08 5.08)
+					(end -5.08 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "APA102-2020_1_1"
+				(pin power_in line
+					(at 0 7.62 270)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "CKO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 2.54 180)
+					(length 2.54)
+					(name "SDO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "SDI"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "CKI"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:GND"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(junction
+		(at 59.69 16.51)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "060fb856-81d2-4974-ae48-8ae441fbc7f8")
+	)
+	(junction
+		(at 85.09 13.97)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0680f011-0713-45cf-9d5e-5f05edd47666")
+	)
+	(junction
+		(at 85.09 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0ced81cb-a82d-4198-92ca-c3387d04d1b3")
+	)
+	(junction
+		(at 85.09 16.51)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "125db1f1-64f4-41b4-8702-f8a9bc42c488")
+	)
+	(junction
+		(at 34.29 13.97)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "14d853ed-616f-450a-9257-7cf5bb07a1aa")
+	)
+	(junction
+		(at 50.8 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1a9eac3d-918f-4a66-b8f8-81675ec394f9")
+	)
+	(junction
+		(at 25.4 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "29361cd5-6a7b-41b8-b830-ce4feb772dff")
+	)
+	(junction
+		(at 59.69 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4a583509-a8f9-4d13-8504-7c6c0ce8f738")
+	)
+	(junction
+		(at 101.6 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6bb54f61-900b-47b0-b140-d9901e97d399")
+	)
+	(junction
+		(at 110.49 16.51)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8c9c2fea-26f1-405a-b49a-3346baebb182")
+	)
+	(junction
+		(at 34.29 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9f301339-ebad-4332-9aba-4a5a8c289ae2")
+	)
+	(junction
+		(at 59.69 13.97)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e76fedd6-6042-4fda-b605-4bdb064df0da")
+	)
+	(junction
+		(at 34.29 16.51)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e9463237-19e7-4cf2-a33d-d8e2144587a7")
+	)
+	(junction
+		(at 76.2 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fb47b766-2d19-4a24-8cbf-f13fe7c54d29")
+	)
+	(wire
+		(pts
+			(xy 25.4 34.29) (xy 34.29 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "01be6a97-6d69-48d8-a667-f012505c77a5")
+	)
+	(wire
+		(pts
+			(xy 59.69 34.29) (xy 76.2 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "044af3d1-a9fc-4756-b02f-86da9c3c9ac4")
+	)
+	(wire
+		(pts
+			(xy 25.4 34.29) (xy 25.4 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0951ed8e-ba2a-4cc9-addc-254e2f988a26")
+	)
+	(wire
+		(pts
+			(xy 76.2 16.51) (xy 76.2 17.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d71e468-fbc6-4892-bfba-e2e0b7f98fb0")
+	)
+	(wire
+		(pts
+			(xy 34.29 16.51) (xy 25.4 16.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1b9715f1-3ef9-4efe-b6b0-ac71b75b04bd")
+	)
+	(wire
+		(pts
+			(xy 101.6 16.51) (xy 101.6 17.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c78f5d7-8513-4ca5-8084-357c439a7390")
+	)
+	(wire
+		(pts
+			(xy 85.09 16.51) (xy 76.2 16.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24dab1f0-23c9-44ff-b501-dabb2db4f550")
+	)
+	(wire
+		(pts
+			(xy 110.49 21.59) (xy 110.49 16.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29b8f3a9-6f21-4729-b5e8-5e4e4e2837f9")
+	)
+	(wire
+		(pts
+			(xy 76.2 34.29) (xy 85.09 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b25003c-3dc3-405f-8c38-6d8753c67a48")
+	)
+	(wire
+		(pts
+			(xy 85.09 21.59) (xy 85.09 16.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2dacdbb8-733a-44b1-972c-8f64873f0d6e")
+	)
+	(wire
+		(pts
+			(xy 58.42 25.4) (xy 68.58 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e24df05-cfa9-4f40-a952-2e3d460679cf")
+	)
+	(wire
+		(pts
+			(xy 34.29 21.59) (xy 34.29 16.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34baa4be-01f8-491c-9ec4-0875ffad3f5a")
+	)
+	(wire
+		(pts
+			(xy 110.49 16.51) (xy 101.6 16.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4120f225-950a-4c32-ab81-aaa02a2d2242")
+	)
+	(wire
+		(pts
+			(xy 25.4 16.51) (xy 25.4 17.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4127406a-0750-4028-97da-d989f7a8947a")
+	)
+	(wire
+		(pts
+			(xy 58.42 22.86) (xy 68.58 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "462411a1-a610-48db-a2d5-c511f5887173")
+	)
+	(wire
+		(pts
+			(xy 83.82 22.86) (xy 93.98 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f1a0956-2eef-4006-a58f-29c2bba4dc09")
+	)
+	(wire
+		(pts
+			(xy 109.22 22.86) (xy 119.38 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4fe3d25f-4750-41e8-8a8d-5fff08c460d1")
+	)
+	(wire
+		(pts
+			(xy 110.49 26.67) (xy 110.49 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "506dba92-35a7-42e2-94ab-5301e2f3ac2e")
+	)
+	(wire
+		(pts
+			(xy 101.6 33.02) (xy 101.6 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "507ebede-890c-4e54-8aa2-37f30bf4a6e5")
+	)
+	(wire
+		(pts
+			(xy 85.09 26.67) (xy 85.09 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "509e0d60-0f87-4cba-b1d2-79d1ede516a7")
+	)
+	(wire
+		(pts
+			(xy 85.09 13.97) (xy 85.09 16.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "520adb95-f629-4d66-8d41-d6d297842d6c")
+	)
+	(wire
+		(pts
+			(xy 34.29 13.97) (xy 59.69 13.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54a92149-9b19-40c5-8360-fc85096cc496")
+	)
+	(wire
+		(pts
+			(xy 85.09 13.97) (xy 110.49 13.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "596c9481-b990-4bdd-8a3d-5bec5927565f")
+	)
+	(wire
+		(pts
+			(xy 59.69 13.97) (xy 85.09 13.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5eb2c269-5b6f-4434-8c45-134e404d3d42")
+	)
+	(wire
+		(pts
+			(xy 22.86 13.97) (xy 34.29 13.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "671d8ad8-8740-48bb-8e10-28ace4dbf31e")
+	)
+	(wire
+		(pts
+			(xy 59.69 13.97) (xy 59.69 16.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b6f4811-9264-42ed-a5eb-7b99598590ab")
+	)
+	(wire
+		(pts
+			(xy 16.51 25.4) (xy 17.78 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "72b8ca1a-0d32-41d0-a2be-b8bb35bb955f")
+	)
+	(wire
+		(pts
+			(xy 59.69 21.59) (xy 59.69 16.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7335fbde-0e47-43f4-ba78-da1f59b6cffc")
+	)
+	(wire
+		(pts
+			(xy 25.4 33.02) (xy 25.4 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "802e452f-eaea-40f6-92a2-b00111cb6355")
+	)
+	(wire
+		(pts
+			(xy 34.29 13.97) (xy 34.29 16.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a1a66e31-6ff9-4178-a303-4f27be5bf587")
+	)
+	(wire
+		(pts
+			(xy 50.8 34.29) (xy 59.69 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a272eb30-ce5c-44c7-9274-56754a4a6931")
+	)
+	(wire
+		(pts
+			(xy 110.49 13.97) (xy 110.49 16.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a320b092-8da4-47a7-b134-20bb8aa77de9")
+	)
+	(wire
+		(pts
+			(xy 34.29 34.29) (xy 50.8 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b66d6b32-bdd1-41be-a285-0eb7cca73f4f")
+	)
+	(wire
+		(pts
+			(xy 33.02 25.4) (xy 43.18 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b84b1cb1-29d2-4df2-9eed-75999b186431")
+	)
+	(wire
+		(pts
+			(xy 85.09 34.29) (xy 101.6 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c29184f5-0f25-4371-8bc6-4a786547a8f7")
+	)
+	(wire
+		(pts
+			(xy 50.8 16.51) (xy 50.8 17.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c54f61ce-af85-48d2-acce-c04c0ecf5664")
+	)
+	(wire
+		(pts
+			(xy 16.51 22.86) (xy 17.78 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c836de04-25ce-4178-9e83-7d059581cff7")
+	)
+	(wire
+		(pts
+			(xy 76.2 33.02) (xy 76.2 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb3092f2-52f5-4295-bdb3-a57bb2adffc4")
+	)
+	(wire
+		(pts
+			(xy 83.82 25.4) (xy 93.98 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cbef7eaf-89e6-42b1-816a-ff6e8557b19f")
+	)
+	(wire
+		(pts
+			(xy 109.22 25.4) (xy 119.38 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d12d8065-4d5d-4e43-98ad-c36000ceb3e6")
+	)
+	(wire
+		(pts
+			(xy 101.6 34.29) (xy 110.49 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6e286c7-f354-4823-9254-e2e4ff78e03b")
+	)
+	(wire
+		(pts
+			(xy 59.69 26.67) (xy 59.69 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e00c850c-f777-4283-aa93-2a9389b20d62")
+	)
+	(wire
+		(pts
+			(xy 34.29 26.67) (xy 34.29 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0881633-b280-47a9-bbb5-a6960e325e3a")
+	)
+	(wire
+		(pts
+			(xy 59.69 16.51) (xy 50.8 16.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3a8a25b-a59e-4f5d-94b3-b19c8e63297b")
+	)
+	(wire
+		(pts
+			(xy 50.8 33.02) (xy 50.8 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6bb10e1-4a94-452a-be31-068d83afcbf0")
+	)
+	(wire
+		(pts
+			(xy 33.02 22.86) (xy 43.18 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f74a20fc-550a-4058-8559-b9a3be59c5c9")
+	)
+	(hierarchical_label "CLKOUT"
+		(shape input)
+		(at 119.38 25.4 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "56761511-7dfa-4a9e-83e6-4b46f7f1fa7a")
+	)
+	(hierarchical_label "LED_SCK"
+		(shape input)
+		(at 16.51 25.4 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "66f15081-05b3-491e-b3ee-e21067a95119")
+	)
+	(hierarchical_label "LED_MOSI"
+		(shape input)
+		(at 16.51 22.86 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6f858a6e-f5d8-4da1-b293-2893faddc08e")
+	)
+	(hierarchical_label "5V"
+		(shape input)
+		(at 22.86 13.97 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "bbbb4a59-0025-4c94-8b3a-65aacde7b311")
+	)
+	(hierarchical_label "DOUT"
+		(shape input)
+		(at 119.38 22.86 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c2943a7e-fb79-4503-a668-d06e09a8d61f")
+	)
+	(symbol
+		(lib_id "LED:APA102-2020")
+		(at 76.2 25.4 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3fd063a6-f79a-457f-8c44-72b0413a9eda")
+		(property "Reference" "D6"
+			(at 78.3433 15.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "APA102-2020"
+			(at 78.3433 17.78 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED-APA102-2020"
+			(at 77.47 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Datasheet" "http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf"
+			(at 78.74 34.925 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 76.2 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "5"
+			(uuid "e411d9b1-6089-47f0-aebc-420a1949e2af")
+		)
+		(pin "1"
+			(uuid "9a397f45-33fb-41f0-9c1d-9dbbdaeddb22")
+		)
+		(pin "6"
+			(uuid "668d0056-787c-4357-a043-860dbb8283f6")
+		)
+		(pin "3"
+			(uuid "cab7c338-7a9b-4f1a-ba1b-8e85fe8b7692")
+		)
+		(pin "4"
+			(uuid "520ce1a9-4118-495c-97a6-87fbe8e8e679")
+		)
+		(pin "2"
+			(uuid "0a252226-675b-4894-88bb-5bdbd54a21c0")
+		)
+		(instances
+			(project "MP3player"
+				(path "/c86fdb70-ebb0-4c87-946f-42a0fbefb388/6b15f412-bbfd-4cd1-9875-9458549e3802"
+					(reference "D6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 59.69 24.13 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5f241491-ae2b-4b1c-93f2-332e670671ed")
+		(property "Reference" "C50"
+			(at 62.23 22.8662 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 62.23 25.4062 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 59.69 24.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 59.69 24.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 59.69 24.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "4484fb97-88db-4553-9c5e-c80f63ccdac1")
+		)
+		(pin "1"
+			(uuid "86630bcc-af47-423b-97e9-5974c236edd4")
+		)
+		(instances
+			(project "MP3player"
+				(path "/c86fdb70-ebb0-4c87-946f-42a0fbefb388/6b15f412-bbfd-4cd1-9875-9458549e3802"
+					(reference "C50")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:APA102-2020")
+		(at 101.6 25.4 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6b92b189-2751-42d5-94b3-3d1da020f13b")
+		(property "Reference" "D7"
+			(at 103.7433 15.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "APA102-2020"
+			(at 103.7433 17.78 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED-APA102-2020"
+			(at 102.87 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Datasheet" "http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf"
+			(at 104.14 34.925 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 101.6 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "5"
+			(uuid "fd2caa52-2f52-457b-ba65-aae99c572d67")
+		)
+		(pin "1"
+			(uuid "76b24b41-c811-4408-a92a-60475512e0b7")
+		)
+		(pin "6"
+			(uuid "9f4635ff-70d5-4029-8f6f-40fb8b4d95ba")
+		)
+		(pin "3"
+			(uuid "e1986697-30fe-458e-868d-ef8e90444e39")
+		)
+		(pin "4"
+			(uuid "8d10c0f7-3f62-4afe-9a71-4b76d268f5e2")
+		)
+		(pin "2"
+			(uuid "39cdc99f-3e7e-4c0c-8a61-cc7213782c0b")
+		)
+		(instances
+			(project "MP3player"
+				(path "/c86fdb70-ebb0-4c87-946f-42a0fbefb388/6b15f412-bbfd-4cd1-9875-9458549e3802"
+					(reference "D7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:APA102-2020")
+		(at 50.8 25.4 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "88109e74-a4b8-4de5-a78b-d42aaded723a")
+		(property "Reference" "D5"
+			(at 52.9433 15.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "APA102-2020"
+			(at 52.9433 17.78 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED-APA102-2020"
+			(at 52.07 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Datasheet" "http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf"
+			(at 53.34 34.925 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 50.8 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "5"
+			(uuid "130f5aab-3570-4f98-afaa-bdfd69432996")
+		)
+		(pin "1"
+			(uuid "afdb77f0-7b5d-40c3-bffd-8053fc6514a0")
+		)
+		(pin "6"
+			(uuid "d89bf213-cb5b-4189-a2c7-97dfa787e3bb")
+		)
+		(pin "3"
+			(uuid "737b5a4f-ad02-4e2c-a127-7e0403952620")
+		)
+		(pin "4"
+			(uuid "4e9cf979-e2cc-40fa-a0a9-cfca579e9e76")
+		)
+		(pin "2"
+			(uuid "60b5b32c-57aa-4225-a7dc-fef8047a222b")
+		)
+		(instances
+			(project "MP3player"
+				(path "/c86fdb70-ebb0-4c87-946f-42a0fbefb388/6b15f412-bbfd-4cd1-9875-9458549e3802"
+					(reference "D5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 25.4 35.56 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9366d5c7-2939-4a74-8edf-bcd3c395de0f")
+		(property "Reference" "#PWR074"
+			(at 25.4 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 25.4 40.64 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 25.4 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 25.4 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 25.4 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0e16887f-838a-4bc2-b5e3-c4e107f3e65b")
+		)
+		(instances
+			(project "MP3player"
+				(path "/c86fdb70-ebb0-4c87-946f-42a0fbefb388/6b15f412-bbfd-4cd1-9875-9458549e3802"
+					(reference "#PWR074")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 110.49 24.13 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a5cf3140-6e22-4e32-82e8-24453f8e3352")
+		(property "Reference" "C52"
+			(at 113.03 22.8662 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 113.03 25.4062 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 110.49 24.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 110.49 24.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 110.49 24.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "02da9c6a-dabd-406f-8780-f20d7075e291")
+		)
+		(pin "1"
+			(uuid "59b3f47f-6fcc-4198-9c0c-32dcd1b3fa0b")
+		)
+		(instances
+			(project "MP3player"
+				(path "/c86fdb70-ebb0-4c87-946f-42a0fbefb388/6b15f412-bbfd-4cd1-9875-9458549e3802"
+					(reference "C52")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 85.09 24.13 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dca45b1b-e140-4af5-8395-440cdcd7b012")
+		(property "Reference" "C51"
+			(at 87.63 22.8662 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 87.63 25.4062 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 85.09 24.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 85.09 24.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 85.09 24.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "f3a47048-1958-458a-a824-7eda094539b2")
+		)
+		(pin "1"
+			(uuid "4ae745c1-df48-4973-bd4f-f9e351663d17")
+		)
+		(instances
+			(project "MP3player"
+				(path "/c86fdb70-ebb0-4c87-946f-42a0fbefb388/6b15f412-bbfd-4cd1-9875-9458549e3802"
+					(reference "C51")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:APA102-2020")
+		(at 25.4 25.4 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f1792b8a-88f8-457b-8c1d-6db42e3c0f80")
+		(property "Reference" "D4"
+			(at 27.5433 15.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "APA102-2020"
+			(at 27.5433 17.78 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED-APA102-2020"
+			(at 26.67 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Datasheet" "http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf"
+			(at 27.94 34.925 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 25.4 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "5"
+			(uuid "0f22a4e8-b224-4b68-812b-cc9470f8c1c2")
+		)
+		(pin "1"
+			(uuid "fd3054c3-9476-45c2-95eb-7bb08d498eb3")
+		)
+		(pin "6"
+			(uuid "f6bb55b8-2263-42b0-8885-9b47bf369e4f")
+		)
+		(pin "3"
+			(uuid "f007a772-83cf-4b4e-aeba-9bf78a1ca370")
+		)
+		(pin "4"
+			(uuid "76018f3a-c881-4b51-abc2-e179fe195178")
+		)
+		(pin "2"
+			(uuid "f685987f-53fb-45b7-ae71-97b263ace9af")
+		)
+		(instances
+			(project "MP3player"
+				(path "/c86fdb70-ebb0-4c87-946f-42a0fbefb388/6b15f412-bbfd-4cd1-9875-9458549e3802"
+					(reference "D4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 34.29 24.13 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ff58a144-7cfd-42fe-82b9-552c469468dc")
+		(property "Reference" "C49"
+			(at 36.83 22.8662 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 36.83 25.4062 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 34.29 24.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 34.29 24.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 34.29 24.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "2fa8e461-c1e6-45ed-8364-bc0ad5c5f91a")
+		)
+		(pin "1"
+			(uuid "6b5d0fb1-d75f-4e63-83bc-dffa15551d18")
+		)
+		(instances
+			(project "MP3player"
+				(path "/c86fdb70-ebb0-4c87-946f-42a0fbefb388/6b15f412-bbfd-4cd1-9875-9458549e3802"
+					(reference "C49")
+					(unit 1)
+				)
+			)
+		)
+	)
+)

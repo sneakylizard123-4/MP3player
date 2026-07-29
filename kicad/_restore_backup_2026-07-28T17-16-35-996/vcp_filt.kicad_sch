@@ -1,0 +1,837 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "e3d08f1c-5069-4501-920d-1cbbc86d5a92")
+	(paper "A4")
+	(lib_symbols
+		(symbol "Device:C_Small"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.254 1.778 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C_Small"
+				(at 0.254 -2.032 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Unpolarized capacitor, small symbol"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "capacitor cap"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "C_Small_0_1"
+				(polyline
+					(pts
+						(xy -1.524 0.508) (xy 1.524 0.508)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
+					)
+					(stroke
+						(width 0.3302)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 2.032)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 2.032)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(junction
+		(at 40.64 66.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0dd1e920-ff80-4390-9a07-f3c3b6a13eaa")
+	)
+	(junction
+		(at 40.64 57.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6493afb9-f82b-4412-8093-13ae6baa8a15")
+	)
+	(junction
+		(at 60.96 46.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "699da001-8005-440f-a763-39308df15503")
+	)
+	(junction
+		(at 50.8 57.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cf4634c6-c784-49cc-9e2f-ef978e599809")
+	)
+	(wire
+		(pts
+			(xy 38.1 57.15) (xy 40.64 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "00925f6e-d596-457a-9185-f42ee5499ebc")
+	)
+	(wire
+		(pts
+			(xy 38.1 52.07) (xy 40.64 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08526f50-832f-4673-8d2c-14d3ed1c2bb4")
+	)
+	(wire
+		(pts
+			(xy 40.64 57.15) (xy 50.8 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10deb839-476a-475c-967d-755bfb524596")
+	)
+	(wire
+		(pts
+			(xy 38.1 46.99) (xy 60.96 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1dec995a-6118-4450-95d3-ed083f859f02")
+	)
+	(wire
+		(pts
+			(xy 50.8 49.53) (xy 50.8 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27bb582e-04f2-4298-b531-bda669bed47f")
+	)
+	(wire
+		(pts
+			(xy 50.8 57.15) (xy 60.96 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2fe6e481-6273-486b-a1e3-396437c43dc0")
+	)
+	(wire
+		(pts
+			(xy 60.96 46.99) (xy 60.96 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "39f04786-2c4e-48dc-8547-911bd4a32a90")
+	)
+	(wire
+		(pts
+			(xy 60.96 45.72) (xy 60.96 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "446268c2-6b1f-4d61-9049-69a013f6a490")
+	)
+	(wire
+		(pts
+			(xy 40.64 66.04) (xy 40.64 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "540d7dad-0cdc-471e-95b3-477109388c00")
+	)
+	(wire
+		(pts
+			(xy 59.69 45.72) (xy 60.96 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c3ceeb4-8f1c-4d60-bb65-792141fae7ec")
+	)
+	(wire
+		(pts
+			(xy 38.1 49.53) (xy 50.8 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9bb37dcc-1237-4c7e-8487-b66c2dadd199")
+	)
+	(wire
+		(pts
+			(xy 38.1 66.04) (xy 40.64 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9dfe7e3a-c9ee-4c65-84b6-a0fbcec292f0")
+	)
+	(wire
+		(pts
+			(xy 38.1 59.69) (xy 40.64 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0db0df2-c272-4899-8c2c-e77f57951821")
+	)
+	(wire
+		(pts
+			(xy 38.1 72.39) (xy 40.64 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3d64d4e-30ac-4c6f-834c-9e790f3f0ff4")
+	)
+	(wire
+		(pts
+			(xy 40.64 64.77) (xy 40.64 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6af7052-c24a-4cd1-aba5-fc580a5bb014")
+	)
+	(hierarchical_label "VCP_FILT+"
+		(shape input)
+		(at 38.1 49.53 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "29504033-d8f3-4ee8-a727-1f4558dd8380")
+	)
+	(hierarchical_label "VCP"
+		(shape input)
+		(at 38.1 46.99 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2c76a27f-2158-4c45-8a4c-686b908decb3")
+	)
+	(hierarchical_label "GNDCP"
+		(shape input)
+		(at 38.1 57.15 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9549fb57-d487-4b0a-86e3-11e9823ed8e8")
+	)
+	(hierarchical_label "FLYC_VCP"
+		(shape input)
+		(at 38.1 66.04 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c3156c67-eaed-424e-a379-80766490e5c2")
+	)
+	(hierarchical_label "FLYN_VCP"
+		(shape input)
+		(at 38.1 72.39 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d67e99ef-853b-489b-9e10-594d07e31662")
+	)
+	(hierarchical_label "1.8v"
+		(shape input)
+		(at 59.69 45.72 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d6b949fb-f3d7-4b62-bbcb-34203c5ee82f")
+	)
+	(hierarchical_label "VCP_FILT-"
+		(shape input)
+		(at 38.1 52.07 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d9b10836-9d23-43c7-935e-ba616c505401")
+	)
+	(hierarchical_label "FLYP_VCP"
+		(shape input)
+		(at 38.1 59.69 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "fecb85b5-30bd-4a68-8e1a-def22c499f8d")
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 40.64 69.85 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4f16709b-219e-4257-a247-1208d9aacfe8")
+		(property "Reference" "C56"
+			(at 43.18 68.5862 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2.2uF"
+			(at 43.18 71.1262 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 40.64 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 40.64 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 40.64 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bb992605-83ad-496a-83a1-91a2163bfb45")
+		)
+		(pin "2"
+			(uuid "2ee00e5d-9c66-43a5-b5d8-0b9862263182")
+		)
+		(instances
+			(project "MP3player"
+				(path "/c86fdb70-ebb0-4c87-946f-42a0fbefb388/8ec0c330-8240-4e36-aed2-8b84a8e7f410/fae2aa14-d6a3-4ea7-96f8-e52515107470"
+					(reference "C56")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 50.8 54.61 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "76c195d3-5405-4371-be25-892620838137")
+		(property "Reference" "C57"
+			(at 53.34 53.3462 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2.2uF"
+			(at 53.34 55.8862 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 50.8 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 50.8 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 50.8 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "15e0dc2c-ea8f-478c-9761-d17f9b731bee")
+		)
+		(pin "2"
+			(uuid "95e0dfe0-3643-4816-97b7-fdb266e32f4b")
+		)
+		(instances
+			(project "MP3player"
+				(path "/c86fdb70-ebb0-4c87-946f-42a0fbefb388/8ec0c330-8240-4e36-aed2-8b84a8e7f410/fae2aa14-d6a3-4ea7-96f8-e52515107470"
+					(reference "C57")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 40.64 62.23 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8ac47498-3f72-4c7a-a8a0-8935d1c42e8b")
+		(property "Reference" "C55"
+			(at 43.18 60.9662 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2.2uF"
+			(at 43.18 63.5062 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 40.64 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 40.64 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 40.64 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4e817f19-4433-4bca-9c14-78aee9bbc963")
+		)
+		(pin "2"
+			(uuid "4b3bc444-ac17-4e94-ae81-b695dce9fd7d")
+		)
+		(instances
+			(project "MP3player"
+				(path "/c86fdb70-ebb0-4c87-946f-42a0fbefb388/8ec0c330-8240-4e36-aed2-8b84a8e7f410/fae2aa14-d6a3-4ea7-96f8-e52515107470"
+					(reference "C55")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 40.64 54.61 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "99f8a13f-2a4b-4c88-abfa-c6aa967959b8")
+		(property "Reference" "C54"
+			(at 43.18 53.3462 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2.2uF"
+			(at 43.18 55.8862 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 40.64 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 40.64 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 40.64 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "25fee9fd-aeee-40ae-a35c-31515e584bb0")
+		)
+		(pin "2"
+			(uuid "be311fbb-fdf6-4acb-916c-59be6f8d3794")
+		)
+		(instances
+			(project "MP3player"
+				(path "/c86fdb70-ebb0-4c87-946f-42a0fbefb388/8ec0c330-8240-4e36-aed2-8b84a8e7f410/fae2aa14-d6a3-4ea7-96f8-e52515107470"
+					(reference "C54")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 60.96 54.61 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f38dafd3-8398-4197-8cd5-51cf11c88cda")
+		(property "Reference" "C58"
+			(at 63.5 53.3462 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2.2uF"
+			(at 63.5 55.8862 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 60.96 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 60.96 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 60.96 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "61db80d7-997e-4e2b-b761-a2e07125f0f7")
+		)
+		(pin "2"
+			(uuid "305a447a-3141-478d-a342-96db8cce7ce1")
+		)
+		(instances
+			(project "MP3player"
+				(path "/c86fdb70-ebb0-4c87-946f-42a0fbefb388/8ec0c330-8240-4e36-aed2-8b84a8e7f410/fae2aa14-d6a3-4ea7-96f8-e52515107470"
+					(reference "C58")
+					(unit 1)
+				)
+			)
+		)
+	)
+)

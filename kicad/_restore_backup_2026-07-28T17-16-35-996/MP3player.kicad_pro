@@ -152,7 +152,7 @@
         "min_silk_clearance": 0.0,
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
-        "min_through_hole_diameter": 0.2,
+        "min_through_hole_diameter": 0.3,
         "min_track_width": 0.2,
         "min_via_annular_width": 0.1,
         "min_via_diameter": 0.5,
@@ -648,7 +648,7 @@
         "uuid": "c86fdb70-ebb0-4c87-946f-42a0fbefb388"
       }
     ],
-    "used_designators": "SW1-17,AE1-2,A1,C1-135,BT1-3,H1-4,JP1,TP1-8,R1-26,L1-2,FB1,#PWR1-74,Y1-4,J1-9,MK1,TH1,D1-83,U1-12",
+    "used_designators": "SW1-17,AE1-2,C1-135,A1,R1-26,TP1-8,JP1,H1-4,BT1-3,MK1,TH1,J1-9,L1-2,FB1,Y1-4,#PWR1-74,D1-83,U1-12",
     "variants": []
   },
   "sheets": [
