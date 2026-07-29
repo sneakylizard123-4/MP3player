@@ -180,4 +180,6 @@ ran a full drc pass - all clearance and creepage rules pass. no unconnected nets
 # July 28: pcb silkscreen
 
 fixed small silkscreen errors and added penguin
-![schematic](images/schematics/01-root.png)
+kicad keeps crashing for some reason, probably due to wayland errors
+![penguin](images/penguin/pcb-penguin.png)
+![penguin2](images/penguin/pcb-render.png)
