@@ -188,3 +188,11 @@ pcb is ready for fabrication.
 ![penguin2](images/penguin/pcb-render.png)
 
 **Total time spent: 1h**
+
+# July 29: cart
+
+started bom export and lcsc part picking
+had to change inductor size because there are no 450uH 0805 signal inductors, instead using 1206 470uH to match common values
+kicad isn't crashing anymore??
+bom is a little expensive, will need to choose parts i might already have
+![cart](images/cart/image.png)
