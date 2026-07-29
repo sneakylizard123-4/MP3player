@@ -176,3 +176,8 @@ ran a full drc pass - all clearance and creepage rules pass. no unconnected nets
 ![pcb back](images/pcb/pcb-back.png)
 
 **Total time spent: 6 hours**
+
+# July 28: pcb silkscreen
+
+fixed small silkscreen errors and added penguin
+![schematic](images/schematics/01-root.png)
