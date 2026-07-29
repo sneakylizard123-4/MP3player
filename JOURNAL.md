@@ -179,9 +179,12 @@ ran a full drc pass - all clearance and creepage rules pass. no unconnected nets
 
 # July 28: pcb silkscreen
 
-fixed small silkscreen errors and added penguin
-kicad keeps crashing for some reason, probably due to wayland errors
+fixed silkscreen layer cleanup - some reference designators were overlapping, adjusted text size and positioning for readability.
+added a penguin easter egg on the bottom copper layer, visible through the solder mask.
+kicad keeps crashing every few minutes, probably due to wayland rendering issues. had to save frequently.
+ran a final design rule check - all clear. added a 3d render to check board appearance.
+pcb is ready for fabrication.
 ![penguin](images/penguin/pcb-penguin.png)
 ![penguin2](images/penguin/pcb-render.png)
 
-**Total time spent: 1 hour**
+**Total time spent: 1h**

@@ -98,6 +98,46 @@ pio run -t upload    # flash via SWD
 | Debug | SWD | SWD | PA13-14 |
 | Buttons | 3x3 matrix + 6 direct | GPIO | PA0-4, PB0-4, PC0-1 |
 
+## Bill of Materials
+
+| Ref | Part | Qty | Package | Notes |
+|-----|------|-----|---------|-------|
+| U4 | STM32H743VIT6 | 1 | LQFP-100 | Main MCU |
+| U9 | CS43131-CNZR | 1 | TQFN-40 | Audio DAC |
+| U10 | Si4735-D60-GU | 1 | SSOP-24 | FM radio |
+| MK1 | ICS-43434 | 1 | 3.5×2.65mm | MEMS mic |
+| U6 | LSM6DSL | 1 | LGA-14 | IMU |
+| U8 | BME680 | 1 | LGA-8 | Gas sensor |
+| U5 | ISL29035 | 1 | DFN-6 | Light sensor |
+| U7 | DS3231M | 1 | SOIC-16W | RTC |
+| U11 | BQ24090DGQ | 1 | HVSSOP-10 | Battery charger |
+| U12 | TPS613222ADBV | 1 | SOT-23-5 | Boost converter |
+| U3 | TPS7A4701xRGW | 1 | VQFN-20 | Audio LDO |
+| U2 | TLV70233 | 1 | SOT-23-5 | 3.3V regulator |
+| U1 | USBLC6-2SC6 | 1 | SOT-23-6 | ESD protection |
+| D4–D7 | APA102-2020 | 4 | 2.0×2.0mm | RGB LEDs |
+| D1–D3 | ACDSV6-4448TI-G | 3 | SOT-363 | ESD arrays |
+| D10 | BAT54W | 1 | SOT-323 | Schottky |
+| D8–D9 | LED 0603 | 2 | 0603 | Status LEDs |
+| J1 | USB-C (HRO TYPE-C-31-M-12) | 1 | — | USB input |
+| J4 | 3.5mm jack PJ31060-I | 1 | — | Headphone |
+| J5 | Micro SD (Hirose DM3D-SF) | 1 | — | SD card |
+| J6–J7 | SMA (Amphenol 901-143) | 2 | — | Antenna |
+| J8 | Pin header 1×08 | 1 | 2.54mm | OLED |
+| J3 | Pin header 1×05 | 1 | 2.54mm | SWD debug |
+| J2 | JST PH B2B-PH-K | 1 | 2.00mm | Battery |
+| L1 | 450µH | 1 | 0805 | Radio antenna coil |
+| L2 | 2.2µH | 1 | 0805 | Boost inductor |
+| Y1 | 8MHz TXC AA08000002 | 1 | 5032 | HSE crystal |
+| SW1–SW17 | Tactile (Panasonic EVQPUM/CK KMR2) | 17 | — | Buttons |
+| TH1 | NTC 10k | 1 | 0603 | Battery temp |
+| FB1 | 600Ω @ 100MHz | 1 | 0603 | Ferrite bead |
+| R1–R26 | Resistors (various) | 26 | 0603 | — |
+| C1–C62 | Capacitors (various) | 62 | 0603 | — |
+| H1–H4 | Mounting hole M2 | 4 | — | Enclosure |
+
+Full BOM with footprints: [`BOM.csv`](BOM.csv)
+
 ## Status
 
 - [x] Schematic (8 sheets, complete)
