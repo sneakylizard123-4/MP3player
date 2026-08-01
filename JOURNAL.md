@@ -198,3 +198,29 @@ bom is a little expensive, will need to choose parts i might already have
 ![cart](images/cart/image.png)
 
 **Total time spent: 2h**
+
+# July 30: trace fixes
+
+some traces were quite wobbly and probably werent the best for high-speed
+traces are reasonalby straight now and dont have as much wobble now
+quite difficult as there are lots of vias on the pcb
+very therapeutic and relaxing activity 9/10 would recommend!
+![pcb](images/pcb/pcb-front.png)
+
+**Total time spent: 2h**
+
+# July 31: via optimisation
+
+optimise via placement to save space and make space for traces
+added some vias to try to help with emi issues near the power stage
+might add some more near the audio and radio stages too
+![pcb](images/pcb/pcb-back.png)
+
+**Total time spent: 3h**
+
+# August 1: readme polish
+fix readme as specified by reviewers to include what the sensors do and follow the readme guide
+added overview and gallery to the readme along with assembly and firmware instructions
+![firmware](images/firmware/main.png)
+
+**Total time spent: 1h**
