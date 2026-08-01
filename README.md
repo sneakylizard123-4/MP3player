@@ -1,52 +1,62 @@
 # MP3 Player
 
-A portable MP3 player built around the STM32H743VIT6, designed in KiCad 10 with PlatformIO firmware.
+A portable MP3 player that plays music files off an SD card, picks up FM radio, and records audio through a MEMS microphone — all packed into a 50×70mm board with an OLED screen, an APA102 LED spectrum bar, and a battery that charges over USB-C.
+
+The whole thing runs on an STM32H743 (480MHz Cortex-M7) with a high-fidelity CS43131 DAC driving the headphones. It's designed in KiCad 10 and programmed with PlatformIO.
+
+## Why I made this
+
+I wanted a tiny, standalone music player I could carry around and actually use — not just a phone-shaped black box. Modern phones have great audio but terrible UI, no physical buttons, no visible feedback while playing, and you can't hack on them. I wanted something with a screen, real buttons, a visual spectrum bar, and firmware I control end to end.
+
+The STM32H743 gives me enough RAM and horsepower to buffer and decode audio smoothly while driving the display, LEDs, radio, and sensors all at once.
+
+## Gallery
+
+![3D render](images/penguin/pcb-render.png)
+
+![PCB front](images/pcb/pcb-front.png) | ![PCB back](images/pcb/pcb-back.png)
+
+![Root schematic](images/schematics/01-root.png)
+![Power schematic](images/schematics/02-power.png)
 
 ## Features
 
 - CS43131 headphone DAC with integrated amp
-- Si4735 FM radio receiver
-- ICS-43434 MEMS microphone
+- Si4735 FM radio receiver (I2S audio out)
+- ICS-43434 MEMS microphone for recording
 - Micro SD card storage (4-bit SDMMC)
-- OLED display with button UI (3x3 matrix + direct buttons)
-- APA102 RGB LEDs (spectrum bar)
+- OLED display with 3×3 button matrix + direct buttons
+- APA102 RGB LED spectrum bar
 - LSM6DSL IMU, BME680 environmental sensor, ISL29035 light sensor
-- DS3231M RTC
-- USB 2.0 (USB-C)
-- BQ24090DGQ battery charger with NTC thermistor monitoring
-- TPS613222ADBV boost converter (battery to 5V)
-- Ultra-low-noise TPS7A4701 LDO for audio, TLV70233 for digital
+- DS3231M RTC for timekeeping
+- USB 2.0 (USB-C) with BQ24090DGQ battery charging
+- TPS613222ADBV boost converter (battery → 5V)
+- Ultra-low-noise TPS7A4701 LDO for the audio rail, TLV70233 for digital
 
-## Project Layout
+## What the sensors are for
 
-```
-MP3player/
-├── kicad/                      # KiCad 10 schematics + PCB
-│   ├── MP3player.kicad_sch     # Root — 8 hierarchical sheets
-│   ├── stm32core.kicad_sch     # MCU, sensors, IMU, light, gas, RTC
-│   ├── power.kicad_sch         # USB-C, BQ24090, boost, LDOs, ESD
-│   ├── audio.kicad_sch         # CS43131 DAC, headphone amp
-│   ├── storage.kicad_sch       # Micro SD card slot
-│   ├── oledui.kicad_sch        # OLED display + buttons
-│   ├── radio.kicad_sch         # Si4735 FM radio
-│   ├── microphone.kicad_sch    # ICS-43434 I2S mic
-│   ├── sparkles.kicad_sch      # APA102 LED strip (spectrum bar)
-│   └── parts/                  # Custom footprints
-│
-├── firmware/                   # PlatformIO firmware
-│   ├── platformio.ini          # Build config (ststm32 + stm32cube)
-│   ├── include/
-│   │   ├── stm32h7xx_hal_conf.h
-│   │   ├── pins.h              # Pin assignments from schematic
-│   │   └── config.h
-│   └── src/
-│       ├── main.cpp            # Clock, peripheral init, main loop
-│       └── msp.cpp             # HAL MSP callbacks
-│
-└── README.md
-```
+An MP3 player carries a set of sensors not because they're trendy, but because they make the device genuinely nicer to live with:
 
-## Schematic Sheets
+- **LSM6DSL (6-axis IMU)** — motion sensing for *gesture controls*: shake to skip a track, tilt to change volume, or flip the player face-down to mute. It also provides orientation so the UI knows which way is up, and the accelerometer data is used to make the spectrum bar react to how the device is being moved.
+
+- **BME680 (temperature, humidity, pressure, VOC)** — keeps an eye on the environment the player is in. If the player gets too hot (pocket in summer, left in a car), it can warn you and throttle power-hungry features. It also reads barometric pressure so the player can act as a mini weather station on the OLED, and it's useful for dew-point / humidity-aware behavior. the VOC feature can warn the user about any potential hazards that are present in the air.
+
+- **ISL29035 (ambient light sensor)** — *auto-brightness for the OLED display*. In bright sunlight it cranks the display up so you can read it; at night it dims so the screen doesn't blind you or drain the battery.
+
+None of these affect playback directly, but together they turn the player into something that responds to its environment instead of just sitting there.
+
+## Hardware design
+
+### Power architecture
+
+USB-C → USBLC6 ESD protection → BQ24090DGQ charger → Li-ion battery
+Battery → TPS613222ADBV boost → 5V rail (LEDs)
+Battery → TLV70233 → 3.3V digital rail
+Battery → TPS7A4701 → 3.3V ultra-low-noise audio rail
+
+The NTC thermistor monitors battery temperature during charging, and a charge LED shows charging state.
+
+### Schematic sheets
 
 | Sheet | File | Description | Key Components |
 |-------|------|-------------|----------------|
@@ -55,10 +65,27 @@ MP3player/
 | Power | power.kicad_sch | USB-C input, charger, regulators | BQ24090DGQ, TPS613222ADBV, TPS7A4701, TLV70233, USBLC6 |
 | Audio | audio.kicad_sch | Headphone output | CS43131-CNZR |
 | Storage | storage.kicad_sch | SD card slot | Micro SD (DM3) |
-| OLED UI | oledui.kicad_sch | Display + button matrix | OLED, 13 buttons (ACDSV6-4448TI-G) |
+| OLED UI | oledui.kicad_sch | Display + button matrix | OLED, 13 buttons |
 | Radio | radio.kicad_sch | FM/AM receiver | Si4735-D60-GU |
 | Microphone | microphone.kicad_sch | I2S MEMS mic | ICS-43434 |
 | LED Spectrum | sparkles.kicad_sch | APA102 LED strip | APA102-2020 |
+
+### PCB
+
+6-layer, 1.6mm, ~50×70mm. Top/bottom signal layers, two internal power planes (In1.Cu, In2.Cu), and two inner signal layers (In3.Cu, In4.Cu). Analog audio is kept separated from the digital/power sections; the CS43131 sits close to the headphone jack to keep analog traces short.
+
+## Assembly
+
+1. **Preheat** — 220°C reflow with the board on a stencil for both sides (top & bottom, separate stencils).
+2. **Solder passives first** — all 0603 resistors/capacitors, then the ferrite bead and crystals.
+3. **ICs** — place the STM32H743 (LQFP-100), CS43131, Si4735, and the power ICs (BQ24090, TPS613222ADBV, TPS7A4701, TLV70233). The LQFP-100 and VQFN-20 benefit from flux and a fine tip.
+4. **Connectors** — USB-C, 3.5mm jack, micro SD slot, SMA antennas, pin headers (OLED, SWD), battery JST.
+5. **Buttons & switches** — 17 tactile switches.
+6. **Sensors & mic** — LSM6DSL, BME680, ISL29035, ICS-43434 (careful with reflow time on MEMS).
+7. **LEDs** — 4× APA102-2020.
+8. **Inspect** — check for bridges on the fine-pitch parts (TQFN-40 0.4mm pitch is the trickiest), confirm with flying-probe electrical test.
+9. **Flash** — connect SWD and flash the firmware.
+10. **Power up** — verify 3.3V rails, then check audio out on the headphone jack.
 
 ## Firmware
 
@@ -77,26 +104,7 @@ pio run              # build
 pio run -t upload    # flash via SWD
 ```
 
-## Hardware Summary
-
-| Block | Part | Interface | MCU Pins |
-|-------|------|-----------|----------|
-| MCU | STM32H743VIT6 | — | 100-pin LQFP |
-| Audio DAC | CS43131 | I2S + I2C4 | PE0-1, PE11-12, PE14 |
-| Radio | Si4735 | I2S + I2C | PB10, PB12, PB15, PD12-14 |
-| Microphone | ICS-43434 | I2S | PE2-4, PA15 |
-| IMU | LSM6DSL | SPI1 | PE5-6, PE8-9, PE13 |
-| Gas Sensor | BME680 | SPI1 | PE5-6, PE10, PE13 |
-| Light Sensor | ISL29035 | I2C1 | PD0-1 |
-| RTC | DS3231M | I2C3 | PA8-10 |
-| SD Card | Micro SD | SDMMC1 | PC7-13 |
-| OLED | SPI display | SPI4 | PA5-7, PB5-7 |
-| LEDs | APA102-2020 | SPI | PB11, PB13 |
-| Charger | BQ24090DGQ | — | NTC thermistor, charge LED |
-| Boost | TPS613222ADBV | — | Battery → 5V rail |
-| USB | USB 2.0 | USB FS | PA11-12 |
-| Debug | SWD | SWD | PA13-14 |
-| Buttons | 3x3 matrix + 6 direct | GPIO | PA0-4, PB0-4, PC0-1 |
+The firmware skeleton initializes the 480MHz clock (PLL1 from the 8MHz HSE), PLL2 for audio clock generation, all four I2C buses, both SPI buses, the UART, and every GPIO (buttons, chip selects, control outputs, SD card detect).
 
 ## Bill of Materials
 
@@ -136,7 +144,7 @@ pio run -t upload    # flash via SWD
 | C1–C62 | Capacitors (various) | 62 | 0603 | — |
 | H1–H4 | Mounting hole M2 | 4 | — | Enclosure |
 
-Full BOM with footprints: [`BOM.csv`](BOM.csv)
+Full BOM with LCSC part numbers and prices: [`BOM.csv`](BOM.csv)
 
 ## Fabrication
 
@@ -177,6 +185,18 @@ Full BOM with footprints: [`BOM.csv`](BOM.csv)
 | Engrave Text | Yes |
 | Gross Weight | 0.17 kg |
 
+## Known Issues
+
+- KiCad crashes intermittently during layout, likely a Wayland rendering bug — save often!
+- The 3×3 button matrix shares pins with direct buttons; debounce will be handled in firmware.
+- Firmware drivers are still in progress — the skeleton initializes peripherals but application logic (playback, UI, recording) is not written yet.
+
+## Credits
+
+- All KiCad schematics/PCB and firmware written from scratch for this project
+- STM32 HAL from STMicroelectronics, built via PlatformIO's ststm32 platform
+- Symbols/footprints from the standard KiCad libraries
+
 ## Status
 
 - [x] Schematic (8 sheets, complete)
@@ -184,9 +204,3 @@ Full BOM with footprints: [`BOM.csv`](BOM.csv)
 - [x] Firmware skeleton (clock config, GPIO, I2C, SPI, UART init)
 - [ ] Firmware drivers (audio, SD, OLED, LEDs, sensors, radio, buttons)
 - [ ] Firmware application (playback, UI, recording)
-
-## PCB
-
-6-layer board, 1.6mm thickness, roughly  50×70mm. Top/bottom signal layers with two internal power planes (In1.Cu, In2.Cu) and two additional inner signal layers (In3.Cu, In4.Cu).
-![PCB front](images/pcb/pcb-front.png)
-![PCB back](images/pcb/pcb-back.png)
