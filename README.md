@@ -185,6 +185,8 @@ pio run -t upload
 
 # Fabrication
 
+Gerbers are in kicad/production/MP3player.zip
+
 Boards and stencils are made through JLCPCB.
 
 PCB specs:
